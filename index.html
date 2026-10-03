@@ -148,8 +148,8 @@
     .event-row-value { display: block; color: #fffaf4; font-size: 16px; font-weight: 600; }
     .event-date-time-row small { color: #cbbac9; font-size: 12px; }
     .event-row { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
-    .event-price-row { min-height: 68px; padding: 8px; border-color: rgba(222,185,121,.36); background: rgba(255,255,255,.075); }
-    .event-price-copy { display: flex; align-items: center; gap: 12px; padding-left: 8px; }
+    .event-price-row { min-height: 68px; flex-direction: column; align-items: center; gap: 9px; padding: 12px; border-color: rgba(222,185,121,.36); background: rgba(255,255,255,.075); text-align: center; }
+    .event-price-copy { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 0; }
     .event-price-copy strong { color: #e0bc75; font-family: var(--serif); font-size: 31px; font-weight: 600; line-height: 1; }
     .event-price-copy span { color: #e7dce8; font-size: 12px; }
     .event-price-cta { min-width: 235px; }
@@ -238,6 +238,9 @@
       content: "";
     }
     .section-heading p { max-width: 650px; margin: 0 auto; color: var(--muted); font-size: 16px; }
+    .section-cta { margin-top: 30px; text-align: center; }
+    .metrics-band .section-cta { margin-top: 19px; }
+    .closing-band .section-cta { margin-top: 20px; }
     .recognition-card {
       overflow: hidden;
       border: 1px solid #eee4d8;
@@ -299,7 +302,7 @@
     .price-strip {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 24px;
       margin-top: 31px;
       padding: 20px 23px;
@@ -307,6 +310,7 @@
       border-radius: 13px;
       background: #fffdf9;
       box-shadow: 0 8px 20px rgba(53,20,53,.045);
+      text-align: center;
     }
     .price-strip strong { display: block; color: var(--ink); font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1; }
     .price-strip span { display: block; margin-top: 5px; color: var(--muted); font-size: 16px; }
@@ -635,6 +639,7 @@
           <div class="col-6 col-md-3 metric-item"><strong>3 Days</strong><span>Live Webinar</span></div>
           <div class="col-6 col-md-3 metric-item"><strong>Online</strong><span>Join from anywhere</span></div>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -658,6 +663,7 @@
           <span class="press-label">As featured in</span>
           <span>Mid-Day</span><span>ABP Live</span><span>Business Upturn</span><span>IssueWire</span><span>Dainik Bhaskar</span><span>Punjab Kesri</span><span>India CSR</span>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -674,6 +680,7 @@
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">◎</div><h3>Life Decisions</h3><p>Gain perspective when weighing options or moving through a period of uncertainty.</p></article></div>
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">✧</div><h3>Personal Growth</h3><p>Explore recurring patterns, reconnect with your intuition and learn about yourself.</p></article></div>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -716,6 +723,7 @@
             </article>
           </div>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -733,8 +741,8 @@
         </div>
         <div class="price-strip">
           <div><strong>One pass · all three sessions · ₹99</strong><span>23rd, 24th &amp; 25th · 7:00–8:30 PM IST each evening</span></div>
-          <a class="btn-berry" href="#register">Reserve your seat · ₹99</a>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -754,6 +762,7 @@
             </div>
           </div>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -772,6 +781,7 @@
           <span><b>✧</b>Three live evening sessions</span><span><b>◷</b>90 minutes each</span><span><b>◎</b>Online from anywhere</span><span><b>♡</b>Beginner-friendly format</span>
         </div>
         <p class="section-note">Tarot can support reflection, but it does not guarantee outcomes. Your decisions remain your own.</p>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -830,8 +840,8 @@
         <div class="slider-dots" id="reviewDots" aria-label="Choose a client review slide"></div>
         <div class="price-strip">
           <div><strong>Join all three live evenings for ₹99</strong><span>Dates 23 · 24 · 25&nbsp; | &nbsp;7:00–8:30 PM IST</span></div>
-          <a class="btn-berry" href="#register">Save your spot · ₹99</a>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -847,6 +857,7 @@
           <img class="gallery-calm" src="assets/calm-gallery.jpg" alt="A quiet moment for reflection" loading="lazy">
           <img class="gallery-award" src="assets/award-gallery.jpg" alt="Divine Monica Harsh receiving recognition at an award ceremony" loading="lazy">
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -874,11 +885,11 @@
                 <li>Online access from anywhere</li>
                 <li>Guided examples, reflection and beginner-friendly practice</li>
               </ul>
-              <a class="btn-berry w-100" href="#register">Register now · ₹99</a>
               <p class="section-note">The Razorpay payment link will be connected once provided.</p>
             </div>
           </div>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
 
@@ -918,6 +929,7 @@
             <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Fill in the registration form to continue to the ₹99 payment link. The dates are 23rd, 24th and 25th; month and year will be confirmed.</div></div>
           </div>
         </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
       </div>
     </section>
   </main>
@@ -927,6 +939,7 @@
       <span class="star" aria-hidden="true">✧</span>
       <h2>Your Questions Deserve Time, Care &amp; Clarity</h2>
       <p>Take a moment for yourself. Bring the questions on your mind and explore a fresh perspective in this three-day webinar with Divine Monica Harsh.</p>
+      <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
     </div>
   </section>
 
