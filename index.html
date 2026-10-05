@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#310d31">
-  <meta name="description" content="Join Divine Monica Harsh for a three-day live tarot webinar on the 23rd, 24th and 25th. Three evening sessions, 7:00–8:30 PM IST.">
+  <meta name="description" content="Join Divine Monica Harsh for a three-day live tarot webinar on the 23rd, 24th and 25th. Three evening sessions, 7:00-8:30 PM IST.">
   <title>Find Clarity — 3-Day Tarot Webinar with Divine Monica Harsh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,6 +113,8 @@
       pointer-events: none;
     }
     .hero-inner { position: relative; z-index: 1; padding-top: 66px; padding-bottom: 78px; }
+    .hero-mobile-image-wrap { display: none; }
+    .hero-mobile-image { display: block; width: 100%; height: 300px; border: 1px solid rgba(222,185,121,.42); border-radius: 16px; object-fit: cover; object-position: center 10%; box-shadow: 0 14px 32px rgba(14,2,18,.24); }
     .eyebrow {
       margin-bottom: 15px;
       color: var(--gold);
@@ -503,6 +505,8 @@
       .nav-links { gap: 13px; }
       .nav-links a { font-size: 10px; }
       .hero-inner { padding-top: 48px; padding-bottom: 56px; }
+      .hero-mobile-image-wrap { display: block; margin: 0 0 25px; }
+      .hero-mobile-image { height: clamp(225px, 68vw, 315px); }
       .hero h1 { font-size: clamp(45px, 12vw, 60px); }
       .hero-copy { font-size: 16px; }
       .event-details { gap: 8px; }
@@ -568,8 +572,11 @@
       <div class="container hero-inner">
         <div class="row align-items-center g-lg-5">
           <div class="col-lg-7">
+            <figure class="hero-mobile-image-wrap">
+              <img class="hero-mobile-image" src="assets/hero-image.webp" alt="Divine Monica Harsh holding a tarot card during a reading" fetchpriority="high">
+            </figure>
             <p class="eyebrow">A live 3-day tarot webinar with Divine Monica Harsh</p>
-            <h1 id="hero-title">Find Clarity in <em>Love, Career</em> &amp; Life’s Important Decisions</h1>
+            <h1 id="hero-title">Find Clarity in <em>Love, Career</em> &amp; Life's Important Decisions</h1>
             <p class="hero-copy">Join Monica for three thoughtful evenings exploring tarot, its symbolism and the questions that matter to you. Build a fresh perspective and leave with practical ways to reflect on your next steps.</p>
             <div class="event-details" aria-label="Webinar date, time and price">
               <div class="event-date-time-row">
@@ -580,13 +587,13 @@
                 </div>
                 <div class="event-detail-cell">
                   <span class="event-row-label">Timing</span>
-                  <span class="event-row-value">7:00–8:30 PM</span>
+                  <span class="event-row-value">7:00-8:30 PM</span>
                   <small>IST</small>
                 </div>
               </div>
               <div class="event-row event-price-row">
-                <div class="event-price-copy"><strong>₹99</strong><span>Full access · all 3 sessions</span></div>
-                <a class="btn-berry event-price-cta" href="#register">Reserve your seat · ₹99</a>
+                <div class="event-price-copy"><strong>₹999</strong><span>Full access · all 3 sessions</span></div>
+                <a class="btn-berry event-price-cta" href="#register">Reserve your seat · ₹999</a>
               </div>
             </div>
             <p class="month-note">Month and year will be added once confirmed.</p>
@@ -595,7 +602,7 @@
             <div class="register-card">
               <div class="register-head">
                 <div><p class="eyebrow">Registration</p><h2>Join the 3-Day Webinar</h2></div>
-                <div class="fee-tag"><strong>₹99</strong><small>3-day pass</small></div>
+                <div class="fee-tag"><strong>₹999</strong><small>3-day pass</small></div>
               </div>
               <p class="form-intro">Add your details to continue to the webinar payment.</p>
               <form id="registrationForm">
@@ -621,7 +628,7 @@
                     <option>Learning tarot</option>
                   </select>
                 </div>
-                <button class="btn-berry w-100" type="submit">Continue to Razorpay · ₹99</button>
+                <button class="btn-berry w-100" type="submit">Continue to Razorpay · ₹999</button>
                 <p class="form-hint">Payment will continue through Razorpay after the payment link is connected.</p>
                 <p class="form-status" id="formStatus" aria-live="polite"></p>
               </form>
@@ -639,7 +646,7 @@
           <div class="col-6 col-md-3 metric-item"><strong>3 Days</strong><span>Live Webinar</span></div>
           <div class="col-6 col-md-3 metric-item"><strong>Online</strong><span>Join from anywhere</span></div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -655,7 +662,7 @@
             <div class="recognition-copy">
               <p class="eyebrow">Award</p>
               <h3>Icons of India 2026 Award</h3>
-              <p>Recognised for her contribution to spirituality and tarot reading, honouring more than two decades of guiding individuals through life’s questions.</p>
+              <p>Recognised for her contribution to spirituality and tarot reading, honouring more than two decades of guiding individuals through life's questions.</p>
             </div>
           </div>
         </div>
@@ -663,7 +670,7 @@
           <span class="press-label">As featured in</span>
           <span>Mid-Day</span><span>ABP Live</span><span>Business Upturn</span><span>IssueWire</span><span>Dainik Bhaskar</span><span>Punjab Kesri</span><span>India CSR</span>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -680,7 +687,7 @@
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">◎</div><h3>Life Decisions</h3><p>Gain perspective when weighing options or moving through a period of uncertainty.</p></article></div>
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">✧</div><h3>Personal Growth</h3><p>Explore recurring patterns, reconnect with your intuition and learn about yourself.</p></article></div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -723,7 +730,7 @@
             </article>
           </div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -740,9 +747,9 @@
           <div class="col-md-4"><article class="agenda-card"><div class="agenda-day">03</div><h3>Reading &amp; Reflection</h3><p>Bring the pieces together with simple spreads, guided practice and time to reflect on next steps.</p><span class="agenda-date">Day three · 25th</span></article></div>
         </div>
         <div class="price-strip">
-          <div><strong>One pass · all three sessions · ₹99</strong><span>23rd, 24th &amp; 25th · 7:00–8:30 PM IST each evening</span></div>
+          <div><strong>One pass · all three sessions · ₹999</strong><span>23rd, 24th &amp; 25th · 7:00-8:30 PM IST each evening</span></div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -762,7 +769,7 @@
             </div>
           </div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -781,7 +788,7 @@
           <span><b>✧</b>Three live evening sessions</span><span><b>◷</b>90 minutes each</span><span><b>◎</b>Online from anywhere</span><span><b>♡</b>Beginner-friendly format</span>
         </div>
         <p class="section-note">Tarot can support reflection, but it does not guarantee outcomes. Your decisions remain your own.</p>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -839,9 +846,9 @@
         </div>
         <div class="slider-dots" id="reviewDots" aria-label="Choose a client review slide"></div>
         <div class="price-strip">
-          <div><strong>Join all three live evenings for ₹99</strong><span>Dates 23 · 24 · 25&nbsp; | &nbsp;7:00–8:30 PM IST</span></div>
+          <div><strong>Join all three live evenings for ₹999</strong><span>Dates 23 · 24 · 25&nbsp; | &nbsp;7:00-8:30 PM IST</span></div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -849,7 +856,7 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">A glimpse into Monica's tarot practice</p>
-          <h2>A Glimpse Into Monica’s Tarot Practice</h2>
+          <h2>A Glimpse Into Monica's Tarot Practice</h2>
         </div>
         <div class="gallery-grid">
           <img class="gallery-main" src="assets/monica-gallery.jpg" alt="Divine Monica Harsh holding a tarot card during a reading" loading="lazy">
@@ -857,7 +864,7 @@
           <img class="gallery-calm" src="assets/calm-gallery.jpg" alt="A quiet moment for reflection" loading="lazy">
           <img class="gallery-award" src="assets/award-gallery.jpg" alt="Divine Monica Harsh receiving recognition at an award ceremony" loading="lazy">
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -872,7 +879,7 @@
           <div class="col-md-5">
             <div class="pricing-panel">
               <p class="eyebrow">India · three live evenings</p>
-              <strong>₹99</strong>
+              <strong>₹999</strong>
               <p>For the full 3-day webinar series</p>
             </div>
           </div>
@@ -881,7 +888,7 @@
               <h3>Everything in one pass</h3>
               <ul class="gold-list">
                 <li>Three live 90-minute sessions with Divine Monica Harsh</li>
-                <li>Dates 23rd, 24th &amp; 25th · 7:00–8:30 PM IST</li>
+                <li>Dates 23rd, 24th &amp; 25th · 7:00-8:30 PM IST</li>
                 <li>Online access from anywhere</li>
                 <li>Guided examples, reflection and beginner-friendly practice</li>
               </ul>
@@ -889,7 +896,7 @@
             </div>
           </div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
 
@@ -926,10 +933,10 @@
           </div>
           <div class="accordion-item">
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSeven" aria-expanded="false" aria-controls="faqSeven">How do I register for the webinar?</button></h3>
-            <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Fill in the registration form to continue to the ₹99 payment link. The dates are 23rd, 24th and 25th; month and year will be confirmed.</div></div>
+            <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Fill in the registration form to continue to the ₹999 payment link. The dates are 23rd, 24th and 25th; month and year will be confirmed.</div></div>
           </div>
         </div>
-        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
   </main>
@@ -939,7 +946,7 @@
       <span class="star" aria-hidden="true">✧</span>
       <h2>Your Questions Deserve Time, Care &amp; Clarity</h2>
       <p>Take a moment for yourself. Bring the questions on your mind and explore a fresh perspective in this three-day webinar with Divine Monica Harsh.</p>
-      <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹99</a></div>
+      <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
     </div>
   </section>
 
