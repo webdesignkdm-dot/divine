@@ -30,6 +30,7 @@
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
+      padding-bottom: 112px;
       color: var(--ink);
       background: var(--cream);
       font-family: var(--sans);
@@ -205,8 +206,17 @@
       text-decoration: none;
       box-shadow: 0 9px 20px rgba(130, 13, 89, .22);
       transition: transform .2s ease, box-shadow .2s ease;
+      animation: continuousCtaShake 1.45s ease-in-out infinite;
+      will-change: translate;
     }
     .btn-berry:hover { color: #fff; transform: translateY(-2px); box-shadow: 0 13px 26px rgba(130,13,89,.3); }
+    .btn-outline-gold, .service-link { animation: continuousCtaShake 1.45s ease-in-out infinite; will-change: translate; }
+    @keyframes continuousCtaShake {
+      0%, 100% { translate: 0 0; }
+      25% { translate: -1.25px 0; }
+      50% { translate: 1.25px 0; }
+      75% { translate: -.7px 0; }
+    }
     .btn-outline-gold {
       display: inline-flex;
       min-height: 44px;
@@ -274,33 +284,38 @@
     .service-copy { padding: 20px 21px 21px; }
     .service-copy h3 { margin: 0 0 9px; font-size: 25px; line-height: 1.05; }
     .service-copy p { min-height: 120px; margin: 0 0 15px; color: var(--muted); font-size: 16px; }
-    .service-link { color: #9d239d; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .service-link { display: inline-block; color: #9d239d; font-size: 13px; font-weight: 700; text-decoration: none; }
     .service-link:hover { color: #bd174d; }
-    .agenda-card {
-      position: relative;
-      height: 100%;
-      padding: 26px 25px 28px;
-      border: 1px solid #eadfce;
-      border-radius: 13px;
-      background: #fffdfa;
-      box-shadow: 0 10px 22px rgba(53,20,53,.06);
-    }
-    .agenda-day {
-      display: flex;
-      width: 48px;
-      height: 48px;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 17px;
-      border: 1px solid #dcc592;
-      border-radius: 50%;
-      color: #a45aae;
-      font-family: var(--serif);
-      font-size: 23px;
-    }
-    .agenda-card h3 { margin: 0 0 9px; font-size: 27px; line-height: 1; }
-    .agenda-card p { margin: 0; color: var(--muted); font-size: 16px; }
+    .webinar-series { position: relative; overflow: hidden; color: #fff7f0; background: radial-gradient(ellipse at 10% 10%, rgba(125,28,109,.45), transparent 40%), radial-gradient(ellipse at 95% 95%, rgba(140,36,72,.32), transparent 38%), #300d31; }
+    .webinar-series .section-heading h2 { color: #fff9f3; }
+    .webinar-series .section-heading p { color: #d2c1d2; }
+    .webinar-series .section-heading .eyebrow { color: #d8b777; }
+    .webinar-session { position: relative; height: 100%; overflow: hidden; padding: 25px 23px 27px; border: 1px solid rgba(223,190,135,.3); border-radius: 18px; background: linear-gradient(150deg,rgba(255,255,255,.095),rgba(255,255,255,.035)); box-shadow: 0 15px 32px rgba(11,2,16,.18); }
+    .webinar-session::after { position: absolute; top: -72px; right: -66px; width: 180px; height: 180px; border: 1px solid rgba(220,185,122,.14); border-radius: 50%; content: ""; pointer-events: none; }
+    .webinar-session-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(227,202,166,.2); }
+    .webinar-session-day { display: block; color: #d8b777; font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .webinar-session-number { display: block; margin-top: 4px; color: #fff7e9; font-family: var(--serif); font-size: 42px; line-height: .9; }
+    .webinar-session-time { padding: 7px 10px; border: 1px solid rgba(215,181,112,.34); border-radius: 99px; color: #f0ddbb; font-size: 11px; white-space: nowrap; }
+    .webinar-session h3 { position: relative; z-index: 1; margin: 0; color: #fff9f2; font-size: 27px; line-height: 1.02; }
+    .webinar-session .agenda-points { position: relative; z-index: 1; gap: 11px; margin-top: 16px; }
+    .webinar-session .agenda-points li { color: #d8cbd8; }
+    .webinar-session .agenda-points li::before { color: #d8b777; }
+    .webinar-series .price-strip { border-color: rgba(225,190,137,.26); background: rgba(255,255,255,.065); }
+    .webinar-series .price-strip strong { color: #fff8ef; }
+    .webinar-series .price-strip span { color: #d2c1d2; }
+    .agenda-points { display: grid; gap: 9px; margin: 13px 0 0; padding: 0; list-style: none; }
+    .agenda-points li { position: relative; padding-left: 19px; color: var(--muted); font-size: 16px; line-height: 1.45; }
+    .agenda-points li::before { position: absolute; top: .1em; left: 0; color: #a34ba1; content: "✦"; font-size: 12px; }
     .agenda-date { display: inline-block; margin-top: 15px; color: #a4864c; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .why-card { height: 100%; padding: 25px 24px; border: 1px solid #eadfce; border-radius: 14px; background: rgba(255,253,250,.9); box-shadow: 0 10px 22px rgba(53,20,53,.055); }
+    .why-card .icon-circle { margin: 0 0 18px; }
+    .why-card h3 { margin: 0 0 8px; color: var(--ink); font-size: 24px; }
+    .why-card p { margin: 0; color: var(--muted); font-size: 16px; }
+    #why-choose-us { background: radial-gradient(ellipse at 92% 4%,rgba(161,29,108,.34),transparent 36%),linear-gradient(135deg,#3a0d3b,#5a123f 58%,#351034); }
+    #why-choose-us .section-heading h2 { color: #fff8f1; }
+    #why-choose-us .section-heading p { color: #d8c5d7; }
+    #why-choose-us .section-heading .eyebrow { color: #e4c37d; }
+    #why-choose-us .why-card { border-color: rgba(232,192,137,.4); background: linear-gradient(145deg,#fffaf5,#f8edf5); }
     .price-strip {
       display: flex;
       align-items: center;
@@ -438,6 +453,27 @@
     .review-placeholder .eyebrow { margin-bottom: 8px; }
     .review-placeholder h3 { margin: 0 0 8px; color: #fff8f2; font-size: 27px; }
     .review-placeholder p { margin: 0; color: #cdb9cb; font-size: 16px; }
+    .chat-testimonial { height: 100%; overflow: hidden; border: 1px solid #dce6d4; border-radius: 18px; background: #fffdfa; box-shadow: 0 14px 30px rgba(34,59,43,.09); }
+    .chat-testimonial-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; background: linear-gradient(110deg,#365f51,#477a63); color: #fff; }
+    .chat-testimonial-avatar { display: grid; width: 43px; height: 43px; flex: 0 0 43px; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; background: #f1dfc7; color: #385a4d; font-size: 13px; font-weight: 700; }
+    .chat-testimonial-name { display: block; font-size: 14px; font-weight: 700; line-height: 1.2; }
+    .chat-testimonial-label { display: block; margin-top: 4px; color: #d9e8df; font-size: 11px; }
+    .chat-testimonial-body { min-height: 220px; padding: 18px; background-color: #edf2e8; background-image: radial-gradient(rgba(83,111,83,.12) .8px,transparent .8px); background-size: 14px 14px; }
+    .chat-bubble { position: relative; max-width: 92%; margin: 3px auto 0 0; padding: 15px 17px; border: 1px solid #e4e9dc; border-radius: 4px 16px 16px 16px; background: #fffef9; color: #33443a; font-size: 16px; line-height: 1.55; box-shadow: 0 4px 9px rgba(36,63,43,.06); }
+    .chat-bubble::after { display: block; margin-top: 9px; color: #8b9a8f; content: "Client reflection"; font-size: 10px; text-align: right; }
+    .chat-testimonial-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 18px; color: #64766b; font-size: 11px; }
+    .chat-tag { padding: 5px 9px; border-radius: 99px; background: #edf5ec; color: #486954; font-weight: 600; }
+    #whatsapp-testimonials { background: radial-gradient(ellipse at 8% 100%,rgba(163,24,100,.32),transparent 40%),linear-gradient(125deg,#310d34,#50123f 58%,#3a0b35); }
+    #whatsapp-testimonials .section-heading h2 { color: #fff8f3; }
+    #whatsapp-testimonials .section-heading p { color: #ddcadd; }
+    #whatsapp-testimonials .section-heading .eyebrow { color: #e4c37c; }
+    .chat-testimonial--pending { border-color: rgba(234,195,142,.45); }
+    .chat-testimonial--pending .chat-testimonial-head { background: linear-gradient(110deg,#7d285f,#a02d65); }
+    .chat-testimonial--pending .chat-testimonial-avatar { background: #fff3eb; color: #8d285a; }
+    .chat-testimonial--pending .chat-testimonial-body { display: flex; align-items: center; }
+    .chat-testimonial--pending .chat-bubble { width: 100%; border: 1px dashed #c7b1bf; background: rgba(255,254,249,.78); color: #665565; }
+    .chat-testimonial--pending .chat-bubble::after { content: "Review text needed"; color: #9d718b; }
+    .chat-testimonial--pending .chat-tag { background: #f8e7f1; color: #882959; }
     .testimonials .price-strip { border-color: rgba(229,190,137,.24); background: rgba(255,255,255,.055); }
     .testimonials .price-strip strong { color: #fff8f2; }
     .testimonials .price-strip span { color: #cdb9cb; }
@@ -485,6 +521,13 @@
     .closing-band .star { display: block; color: #d7b56c; font-size: 19px; }
     .closing-band h2 { margin: 4px 0 6px; font-size: clamp(29px, 3.4vw, 41px); line-height: 1; }
     .closing-band p { margin: 0; color: #d1bfd1; font-size: 16px; }
+    .sticky-offer-bar { position: fixed; z-index: 1040; right: 0; bottom: calc(12px + env(safe-area-inset-bottom)); left: 0; display: grid; width: min(980px, calc(100% - 28px)); grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 18px; margin: auto; padding: 13px 16px; border: 1px solid rgba(188,155,87,.48); border-radius: 18px; background: rgba(255,253,248,.96); box-shadow: 0 15px 42px rgba(34,9,36,.22); backdrop-filter: blur(14px); }
+    .sticky-offer-copy { min-width: 0; }
+    .sticky-offer-urgency { margin: 0 0 2px; color: #a62c64; font-size: 13px; font-weight: 700; }
+    .sticky-offer-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 10px; color: #6f6171; font-size: 13px; }
+    .sticky-offer-count time { color: #351435; font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: .03em; }
+    .sticky-offer-button { display: grid; min-width: 182px; justify-items: center; gap: 0; padding: 9px 17px; border-radius: 13px; font-size: 12px; line-height: 1.35; }
+    .sticky-offer-button strong { font-family: var(--serif); font-size: 24px; line-height: 1.05; }
     .modal-content { overflow: hidden; border: 1px solid #d9c597; border-radius: 14px; background: #fffaf3; }
     .modal-header { border-bottom-color: #eadfcf; }
     .modal-title { color: var(--ink); font-family: var(--serif); font-size: 28px; }
@@ -542,10 +585,21 @@
       .pricing-panel { min-height: 220px; }
       .pricing-copy { padding: 25px 23px; }
       .closing-band { padding: 38px 0; }
+      body { padding-bottom: 116px; }
+      .sticky-offer-bar { width: calc(100% - 18px); gap: 9px; padding: 10px 11px; border-radius: 15px; }
+      .sticky-offer-urgency { font-size: 11px; }
+      .sticky-offer-count { gap: 3px 7px; font-size: 11px; }
+      .sticky-offer-count time { font-size: 15px; }
+      .sticky-offer-button { min-width: 133px; padding: 8px 11px; font-size: 11px; }
+      .sticky-offer-button strong { font-size: 21px; }
     }
     @media (max-width: 575.98px) {
       .carousel-slide { flex-basis: 100%; }
       .review-controls { margin-top: 24px; }
+      .sticky-offer-bar { grid-template-columns: minmax(0, 1fr) auto; }
+      .sticky-offer-count { display: block; }
+      .sticky-offer-count time { display: block; white-space: nowrap; }
+      .sticky-offer-button { min-width: 118px; padding: 8px 9px; }
     }
     @media (max-width: 420px) {
       .brand-mark { width: 34px; height: 34px; }
@@ -559,6 +613,7 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .btn-berry, .btn-outline-gold, .service-link { animation: none !important; will-change: auto; }
     }
   </style>
 </head>
@@ -734,20 +789,37 @@
       </div>
     </section>
 
-    <section class="section-pad-lg bg-cream" id="agenda">
+    <section class="section-pad-lg webinar-series" id="agenda">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">The webinar series</p>
-          <h2>Three Evenings to Explore Tarot with Clarity</h2>
-          <p>Each 90-minute session builds on the last. Join all three evenings online with Divine Monica Harsh.</p>
+          <p class="eyebrow">Your three-evening learning path</p>
+          <h2>From First Card to Confident Reflection</h2>
+          <p>Three live sessions, one clear progression. Each evening runs from 7:00 to 8:30 PM IST.</p>
         </div>
-        <div class="row g-3">
-          <div class="col-md-4"><article class="agenda-card"><div class="agenda-day">01</div><h3>Tarot Foundations</h3><p>Get familiar with tarot, the structure of the deck and the symbols that help a reading take shape.</p><span class="agenda-date">Day one · 23rd</span></article></div>
-          <div class="col-md-4"><article class="agenda-card"><div class="agenda-day">02</div><h3>Questions &amp; Context</h3><p>Explore how to approach questions about relationships, work and life decisions with curiosity.</p><span class="agenda-date">Day two · 24th</span></article></div>
-          <div class="col-md-4"><article class="agenda-card"><div class="agenda-day">03</div><h3>Reading &amp; Reflection</h3><p>Bring the pieces together with simple spreads, guided practice and time to reflect on next steps.</p><span class="agenda-date">Day three · 25th</span></article></div>
+        <div class="row g-3 webinar-session-grid">
+          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-day">Day one</span><span class="webinar-session-number">01</span></div><span class="webinar-session-time">23rd · 7:00–8:30 PM</span></div><h3>Tarot Foundations</h3><ul class="agenda-points"><li>Understand the deck and the Major and Minor Arcana.</li><li>Explore suits, symbols and the meaning behind each card.</li><li>Try a simple exercise to get comfortable with tarot.</li></ul></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-day">Day two</span><span class="webinar-session-number">02</span></div><span class="webinar-session-time">24th · 7:00–8:30 PM</span></div><h3>Questions &amp; Context</h3><ul class="agenda-points"><li>Shape useful questions for a tarot reading.</li><li>Explore relationship, work and life-decision examples.</li><li>Bring intuition together with card meanings.</li></ul></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-day">Day three</span><span class="webinar-session-number">03</span></div><span class="webinar-session-time">25th · 7:00–8:30 PM</span></div><h3>Reading &amp; Reflection</h3><ul class="agenda-points"><li>Follow a simple spread from start to finish.</li><li>Connect cards into a reading with context.</li><li>Practise, reflect and consider possible next steps.</li></ul></article></div>
         </div>
         <div class="price-strip">
-          <div><strong>One pass · all three sessions · ₹999</strong><span>23rd, 24th &amp; 25th · 7:00-8:30 PM IST each evening</span></div>
+          <div><strong>One pass · all three sessions · ₹999</strong><span>Live online · 90 minutes each evening · IST</span></div>
+        </div>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-lavender" id="why-choose-us">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why join this series</p>
+          <h2>A Thoughtful Way to Begin Exploring Tarot</h2>
+          <p>Learn at a steady pace, ask better questions and use tarot as a tool for reflection—whether you are new to the cards or already curious about them.</p>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">✧</div><h3>Learn with experience</h3><p>Explore tarot with Divine Monica Harsh, who brings 20+ years of experience and 4,500+ readings.</p></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">◷</div><h3>Clear three-day path</h3><p>Move from tarot foundations to question-setting, then practise reading and reflection.</p></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">♡</div><h3>Reflection first</h3><p>Use the cards to explore perspectives and patterns; keep your choices and decisions your own.</p></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">◎</div><h3>Join from anywhere</h3><p>Attend online across all three evenings, from wherever you are.</p></article></div>
         </div>
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
@@ -788,6 +860,49 @@
           <span><b>✧</b>Three live evening sessions</span><span><b>◷</b>90 minutes each</span><span><b>◎</b>Online from anywhere</span><span><b>♡</b>Beginner-friendly format</span>
         </div>
         <p class="section-note">Tarot can support reflection, but it does not guarantee outcomes. Your decisions remain your own.</p>
+        <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-cream" id="whatsapp-testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Kind words from clients</p>
+          <h2>Feedback, Shared in Their Own Words</h2>
+          <p>Short reflections from tarot readings and online sessions, shared in a familiar conversation style.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4"><article class="chat-testimonial">
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">KD</span><div><span class="chat-testimonial-name">Kavita D. · Mumbai</span><span class="chat-testimonial-label">Personal reading</span></div></div>
+            <div class="chat-testimonial-body"><blockquote class="chat-bubble">Monica's reading felt specific and grounded. It helped me think through a decision I'd been putting off.</blockquote></div>
+            <div class="chat-testimonial-foot"><span>Client testimonial</span><span class="chat-tag">Tarot reading</span></div>
+          </article></div>
+          <div class="col-lg-4"><article class="chat-testimonial">
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">MS</span><div><span class="chat-testimonial-name">Meera S. · New Jersey</span><span class="chat-testimonial-label">Online session</span></div></div>
+            <div class="chat-testimonial-body"><blockquote class="chat-bubble">The online session felt personal, and the time difference was handled smoothly.</blockquote></div>
+            <div class="chat-testimonial-foot"><span>Client testimonial</span><span class="chat-tag">Online reading</span></div>
+          </article></div>
+          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">03</span><div><span class="chat-testimonial-name">Client story 03</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
+            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 03</span></div>
+          </article></div>
+          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">04</span><div><span class="chat-testimonial-name">Client story 04</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
+            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 04</span></div>
+          </article></div>
+          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">05</span><div><span class="chat-testimonial-name">Client story 05</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
+            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 05</span></div>
+          </article></div>
+          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">06</span><div><span class="chat-testimonial-name">Client story 06</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
+            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 06</span></div>
+          </article></div>
+        </div>
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
       </div>
     </section>
@@ -950,6 +1065,14 @@
     </div>
   </section>
 
+  <aside class="sticky-offer-bar" aria-label="Webinar countdown and registration">
+    <div class="sticky-offer-copy">
+      <p class="sticky-offer-urgency">Hurry—save your place in the 3-day webinar</p>
+      <div class="sticky-offer-count"><span>Time until Day 1 · 23rd · 7:00 PM IST:</span><time id="webinarCountdown" aria-live="off">--d --h --m --s</time></div>
+    </div>
+    <a class="btn-berry sticky-offer-button" href="#register"><span>Reserve your seat</span><strong>₹999</strong></a>
+  </aside>
+
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -970,6 +1093,33 @@
 
     // Replace empty strings with direct video URLs (.mp4) or YouTube watch/share URLs.
     const TESTIMONIAL_VIDEO_URLS = ["", "", "", ""];
+
+    // Until the event month/year is confirmed, count down to the next 23rd at 7:00 PM IST.
+    function getNextWebinarStart() {
+      const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Kolkata",
+        year: "numeric",
+        month: "numeric"
+      }).formatToParts(new Date());
+      const year = Number(parts.find(function (part) { return part.type === "year"; }).value);
+      const month = Number(parts.find(function (part) { return part.type === "month"; }).value);
+      let target = Date.UTC(year, month - 1, 23, 13, 30, 0);
+      if (target <= Date.now()) target = Date.UTC(year, month, 23, 13, 30, 0);
+      return target;
+    }
+
+    const webinarCountdown = document.getElementById("webinarCountdown");
+    const webinarStart = getNextWebinarStart();
+    function updateWebinarCountdown() {
+      const remaining = Math.max(0, webinarStart - Date.now());
+      const days = Math.floor(remaining / 86400000);
+      const hours = Math.floor((remaining % 86400000) / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+      webinarCountdown.textContent = days + "d " + String(hours).padStart(2, "0") + "h " + String(minutes).padStart(2, "0") + "m " + String(seconds).padStart(2, "0") + "s";
+    }
+    updateWebinarCountdown();
+    window.setInterval(updateWebinarCountdown, 1000);
 
     const registrationForm = document.getElementById("registrationForm");
     const formStatus = document.getElementById("formStatus");
