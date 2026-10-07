@@ -126,7 +126,7 @@
     }
     h1, h2, h3, h4, .serif { font-family: var(--serif); font-weight: 500; }
     .hero h1 {
-      max-width: 680px;
+      max-width: 538px;
       margin: 0 0 20px;
       font-size: clamp(48px, 5.3vw, 74px);
       line-height: .97;
@@ -147,21 +147,21 @@
     }
     .event-detail-cell { display: flex; flex-direction: column; justify-content: center; }
     .event-detail-cell + .event-detail-cell { padding-left: 20px; border-left: 1px solid rgba(222,185,121,.25); }
-    .event-row-label { display: block; margin-bottom: 3px; color: #d1ad6c; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-    .event-row-value { display: block; color: #fffaf4; font-size: 16px; font-weight: 600; }
+    .event-row-label { display: block; margin-bottom: 3px; color: #d1ad6c; font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .event-row-value { display: block; color: #fffaf4; font-size: 19px; font-weight: 600; }
     .event-date-time-row small { color: #cbbac9; font-size: 12px; }
     .event-row { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
     .event-price-row { min-height: 68px; flex-direction: column; align-items: center; gap: 9px; padding: 12px; border-color: rgba(222,185,121,.36); background: rgba(255,255,255,.075); text-align: center; }
     .event-price-copy { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 0; }
     .event-price-copy strong { color: #e0bc75; font-family: var(--serif); font-size: 31px; font-weight: 600; line-height: 1; }
-    .event-price-copy span { color: #e7dce8; font-size: 12px; }
+    .event-price-copy span { color: #e7dce8; font-size: 15px; }
     .event-price-cta { min-width: 235px; }
     .month-note { margin: 9px 0 0; color: #cbbac9; font-size: 13px; }
     .metrics-band { padding: 18px 0; border-bottom: 1px solid #eee5da; background: #fffdf8; }
     .metric-item { padding: 2px 20px; border-right: 1px solid #eee2d4; text-align: center; }
     .metric-item:last-child { border-right: 0; }
-    .metric-item strong { display: block; color: #8e4c89; font-family: var(--serif); font-size: 25px; font-weight: 600; line-height: 1; }
-    .metric-item span { display: block; margin-top: 5px; color: #716575; font-size: 13px; }
+    .metric-item strong { display: block; color: #8e4c89; font-family: var(--serif); font-size: 42px; font-weight: 600; line-height: 1; }
+    .metric-item span { display: block; margin-top: 5px; color: #716575; font-size: 18px; }
     .register-card {
       position: relative;
       overflow: hidden;
@@ -172,15 +172,13 @@
       background: #fffdf9;
       box-shadow: 0 22px 65px rgba(12, 2, 16, .25);
     }
-    .register-card::after { position: absolute; top: 15px; right: 17px; color: #bd9a55; content: "✧"; font-size: 22px; }
     .register-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 8px; }
     .register-card .eyebrow { margin-bottom: 4px; color: #9f7840; font-size: 10px; }
-    .register-card h2 { max-width: 245px; margin: 0; color: #351435; font-size: 32px; line-height: .98; }
-    .fee-tag { display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 0 0 68px; min-height: 68px; margin-right: 12px; border: 1px solid #e1c994; border-radius: 15px; background: #f8f0fa; }
+    .register-card h2 { max-width: 300px; margin: 0; color: #351435; font-size: 32px; line-height: .98; }
+    .fee-tag { display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 0 0 68px; min-height: 68px; border: 1px solid #e1c994; border-radius: 15px; background: #f8f0fa; }
     .fee-tag strong { color: #8e3487; font-family: var(--serif); font-size: 25px; font-weight: 700; line-height: 1; }
     .fee-tag small { margin-top: 4px; color: #746477; font-size: 9px; }
-    .form-intro { margin: 0 0 16px; padding-bottom: 13px; border-bottom: 1px solid #efe5d9; color: #756877; font-size: 16px; }
-    .form-label { margin-bottom: 5px; color: #4f3d50; font-size: 13px; font-weight: 600; }
+    .form-label { margin-bottom: 5px; color: #4f3d50; font-size: 16px; font-weight: 600; }
     .register-card .form-control, .register-card .form-select {
       min-height: 46px;
       border-color: #e7dcd0;
@@ -201,7 +199,7 @@
       border-radius: 99px;
       background: linear-gradient(100deg, #a00c9d 0%, #c4165b 72%, #c32943 100%);
       color: #fff;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 700;
       text-decoration: none;
       box-shadow: 0 9px 20px rgba(130, 13, 89, .22);
@@ -225,8 +223,8 @@
       padding: 10px 20px;
       border: 1px solid #d3b16f;
       border-radius: 99px;
-      color: #fff5df;
-      font-size: 12px;
+      color: #a00c9d;
+      font-size: 16px;
       font-weight: 600;
       text-decoration: none;
       transition: background .2s ease;
@@ -249,7 +247,7 @@
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
       content: "";
     }
-    .section-heading p { max-width: 650px; margin: 0 auto; color: var(--muted); font-size: 16px; }
+    .section-heading p { max-width: 650px; margin: 0 auto; color: var(--muted); font-size: 16px; font-weight: 500; }
     .section-cta { margin-top: 30px; text-align: center; }
     .metrics-band .section-cta { margin-top: 19px; }
     .closing-band .section-cta { margin-top: 20px; }
@@ -262,12 +260,12 @@
     }
     .recognition-photo { width: 100%; height: 340px; object-fit: cover; object-position: center 42%; }
     .recognition-copy { padding: 32px 38px; }
-    .recognition-copy .eyebrow { margin-bottom: 8px; font-size: 9px; }
+    .recognition-copy .eyebrow { margin-bottom: 8px; font-size: 16px; }
     .recognition-copy h3 { margin: 0 0 12px; font-size: 31px; }
     .recognition-copy p { margin: 0; color: var(--muted); font-size: 16px; }
     .press-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 40px; align-items: center; margin-top: 37px; }
     .press-row span { color: #74677a; font-family: var(--serif); font-size: 18px; }
-    .press-label { width: 100%; margin-bottom: -8px; color: #ad8d50 !important; font-family: var(--sans) !important; font-size: 9px !important; font-weight: 700; letter-spacing: .2em; text-align: center; text-transform: uppercase; }
+    .press-label { width: 100%; margin-bottom: -8px; color: #ad8d50 !important; font-family: var(--sans) !important; font-size: 18px !important; font-weight: 700; letter-spacing: .2em; text-align: center; text-transform: uppercase; }
     .icon-card {
       height: 100%;
       padding: 23px 22px;
@@ -276,13 +274,13 @@
       background: #fffdfb;
       box-shadow: 0 9px 20px rgba(53, 20, 53, .055);
     }
-    .icon-circle { display: grid; width: 38px; height: 38px; place-items: center; margin-bottom: 15px; border: 1px solid #dfc99e; border-radius: 50%; color: #ae56b2; font-size: 16px; }
+    .icon-circle { display: grid; width: 50px; height: 50px; place-items: center; margin-bottom: 15px; border: 1px solid #dfc99e; border-radius: 50%; color: #ae56b2; font-size: 30px; font-weight: bold; }
     .icon-card h3 { margin: 0 0 7px; color: #4a2449; font-size: 23px; line-height: 1; }
     .icon-card p { margin: 0; color: #766b78; font-size: 16px; }
     .service-card { height: 100%; overflow: hidden; border: 1px solid #eadfce; border-radius: 12px; background: #fffdfa; box-shadow: 0 10px 22px rgba(53,20,53,.07); }
     .service-card img { width: 100%; height: 215px; object-fit: cover; }
     .service-copy { padding: 20px 21px 21px; }
-    .service-copy h3 { margin: 0 0 9px; font-size: 25px; line-height: 1.05; }
+    .service-copy h3 { margin: 0 0 9px; font-size: 25px; font-weight: 500; line-height: 1.05; }
     .service-copy p { min-height: 120px; margin: 0 0 15px; color: var(--muted); font-size: 16px; }
     .service-link { display: inline-block; color: #9d239d; font-size: 13px; font-weight: 700; text-decoration: none; }
     .service-link:hover { color: #bd174d; }
@@ -293,9 +291,8 @@
     .webinar-session { position: relative; height: 100%; overflow: hidden; padding: 25px 23px 27px; border: 1px solid rgba(223,190,135,.3); border-radius: 18px; background: linear-gradient(150deg,rgba(255,255,255,.095),rgba(255,255,255,.035)); box-shadow: 0 15px 32px rgba(11,2,16,.18); }
     .webinar-session::after { position: absolute; top: -72px; right: -66px; width: 180px; height: 180px; border: 1px solid rgba(220,185,122,.14); border-radius: 50%; content: ""; pointer-events: none; }
     .webinar-session-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(227,202,166,.2); }
-    .webinar-session-day { display: block; color: #d8b777; font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
-    .webinar-session-number { display: block; margin-top: 4px; color: #fff7e9; font-family: var(--serif); font-size: 42px; line-height: .9; }
-    .webinar-session-time { padding: 7px 10px; border: 1px solid rgba(215,181,112,.34); border-radius: 99px; color: #f0ddbb; font-size: 11px; white-space: nowrap; }
+    .webinar-session-number { display: block; margin-top: 4px; color: #fff7e9; font-family: var(--sans); font-size: 25px; line-height: .9; }
+    .webinar-session-time { padding: 7px 10px; border: 1px solid rgba(215,181,112,.34); border-radius: 99px; color: #f0ddbb; font-size: 14px; white-space: nowrap; }
     .webinar-session h3 { position: relative; z-index: 1; margin: 0; color: #fff9f2; font-size: 27px; line-height: 1.02; }
     .webinar-session .agenda-points { position: relative; z-index: 1; gap: 11px; margin-top: 16px; }
     .webinar-session .agenda-points li { color: #d8cbd8; }
@@ -341,7 +338,7 @@
     .gold-list li { position: relative; margin: 7px 0; padding-left: 16px; color: #5c4d61; font-size: 16px; }
     .gold-list li::before { position: absolute; left: 0; color: #bc9b57; content: "◆"; font-size: 7px; top: 4px; }
     .steps-row { position: relative; }
-    .steps-row::before { position: absolute; top: 22px; left: 16%; right: 16%; height: 1px; background: #e5d5b2; content: ""; }
+    .steps-row::before { position: absolute; top: 40px; left: 16%; right: 16%; height: 1px; background: #e5d5b2; content: ""; }
     .step-card { position: relative; padding: 0 14px; text-align: center; }
     .step-num {
       display: grid;
@@ -354,7 +351,8 @@
       background: var(--cream);
       color: #a74ca5;
       font-family: var(--serif);
-      font-size: 19px;
+      font-size: 25px;
+      font-weight: 600;
     }
     .step-card h3 { margin: 0 0 8px; font-size: 25px; line-height: 1; }
     .step-card p { max-width: 300px; margin: 0 auto; color: var(--muted); font-size: 16px; }
@@ -370,8 +368,8 @@
       background: #fffdf9;
       box-shadow: 0 8px 18px rgba(53,20,53,.04);
     }
-    .meta-bar span { color: #6e6171; font-size: 13px; }
-    .meta-bar b { margin-right: 7px; color: #bd9b57; font-size: 14px; }
+    .meta-bar span { color: #6e6171; font-size: 16px; }
+    .meta-bar b { margin-right: 7px; color: #bd9b57; font-size: 16px; }
     .section-note { margin: 14px 0 0; color: #8b7d8b; font-size: 14px; text-align: center; }
     .testimonials {
       overflow: hidden;
@@ -437,7 +435,6 @@
       transition: transform .2s ease, background .2s ease;
     }
     .play-button:hover { transform: translate(-50%,-50%) scale(1.08); background: #bc174f; }
-    .poster-label { position: absolute; z-index: 1; right: 13px; bottom: 11px; left: 14px; color: #fff; font-size: 9px; letter-spacing: .11em; text-transform: uppercase; }
     .video-copy { padding: 16px 18px 18px; }
     .video-copy h3 { margin: 0 0 4px; color: #fff9f2; font-size: 25px; }
     .video-copy p { margin: 0; color: #cdb9cb; font-size: 16px; }
@@ -445,34 +442,24 @@
     .slider-dot { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%; background: rgba(237,214,177,.38); }
     .slider-dot.active { width: 23px; border-radius: 8px; background: #d2ae68; }
     .review-controls { margin-top: 30px; }
-    .quote-card { display: flex; height: 100%; min-height: 215px; flex-direction: column; padding: 22px 23px; border: 1px solid rgba(230,185,130,.2); border-radius: 12px; background: rgba(255,255,255,.035); }
+    .quote-card { display: flex; height: 100%; min-height: 215px; flex-direction: column; justify-content: space-evenly; padding: 22px 23px 15px; border: 1px solid rgba(230,185,130,.2); border-radius: 12px; background: rgba(255,255,255,.035); }
     .quote-mark { color: #d2ae68; font-family: var(--serif); font-size: 39px; line-height: .8; }
     .quote-card blockquote { margin: 11px 0 13px; color: #fff8f2; font-family: var(--serif); font-size: 21px; line-height: 1.23; }
-    .quote-card cite { color: #c4a267; font-size: 10px; font-style: normal; }
-    .review-placeholder { justify-content: center; border-style: dashed; }
-    .review-placeholder .eyebrow { margin-bottom: 8px; }
-    .review-placeholder h3 { margin: 0 0 8px; color: #fff8f2; font-size: 27px; }
-    .review-placeholder p { margin: 0; color: #cdb9cb; font-size: 16px; }
+    .quote-card cite { color: #c4a267; font-size: 16px; font-style: normal; }
     .chat-testimonial { height: 100%; overflow: hidden; border: 1px solid #dce6d4; border-radius: 18px; background: #fffdfa; box-shadow: 0 14px 30px rgba(34,59,43,.09); }
-    .chat-testimonial-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; background: linear-gradient(110deg,#365f51,#477a63); color: #fff; }
-    .chat-testimonial-avatar { display: grid; width: 43px; height: 43px; flex: 0 0 43px; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; background: #f1dfc7; color: #385a4d; font-size: 13px; font-weight: 700; }
+    .chat-testimonial-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; background: linear-gradient(110deg,#365f51,#2CD46B); color: #fff; }
+    .chat-testimonial-avatar { display: grid; width: 43px; height: 43px; flex: 0 0 43px; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; background: #ffffff; color: #385a4d; font-size: 13px; font-weight: 700; }
     .chat-testimonial-name { display: block; font-size: 14px; font-weight: 700; line-height: 1.2; }
-    .chat-testimonial-label { display: block; margin-top: 4px; color: #d9e8df; font-size: 11px; }
     .chat-testimonial-body { min-height: 220px; padding: 18px; background-color: #edf2e8; background-image: radial-gradient(rgba(83,111,83,.12) .8px,transparent .8px); background-size: 14px 14px; }
     .chat-bubble { position: relative; max-width: 92%; margin: 3px auto 0 0; padding: 15px 17px; border: 1px solid #e4e9dc; border-radius: 4px 16px 16px 16px; background: #fffef9; color: #33443a; font-size: 16px; line-height: 1.55; box-shadow: 0 4px 9px rgba(36,63,43,.06); }
-    .chat-bubble::after { display: block; margin-top: 9px; color: #8b9a8f; content: "Client reflection"; font-size: 10px; text-align: right; }
-    .chat-testimonial-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 18px; color: #64766b; font-size: 11px; }
     .chat-tag { padding: 5px 9px; border-radius: 99px; background: #edf5ec; color: #486954; font-weight: 600; }
     #whatsapp-testimonials { background: radial-gradient(ellipse at 8% 100%,rgba(163,24,100,.32),transparent 40%),linear-gradient(125deg,#310d34,#50123f 58%,#3a0b35); }
     #whatsapp-testimonials .section-heading h2 { color: #fff8f3; }
     #whatsapp-testimonials .section-heading p { color: #ddcadd; }
     #whatsapp-testimonials .section-heading .eyebrow { color: #e4c37c; }
     .chat-testimonial--pending { border-color: rgba(234,195,142,.45); }
-    .chat-testimonial--pending .chat-testimonial-head { background: linear-gradient(110deg,#7d285f,#a02d65); }
-    .chat-testimonial--pending .chat-testimonial-avatar { background: #fff3eb; color: #8d285a; }
     .chat-testimonial--pending .chat-testimonial-body { display: flex; align-items: center; }
     .chat-testimonial--pending .chat-bubble { width: 100%; border: 1px dashed #c7b1bf; background: rgba(255,254,249,.78); color: #665565; }
-    .chat-testimonial--pending .chat-bubble::after { content: "Review text needed"; color: #9d718b; }
     .chat-testimonial--pending .chat-tag { background: #f8e7f1; color: #882959; }
     .testimonials .price-strip { border-color: rgba(229,190,137,.24); background: rgba(255,255,255,.055); }
     .testimonials .price-strip strong { color: #fff8f2; }
@@ -514,19 +501,19 @@
     .pricing-copy .gold-list { margin: 0 0 19px; }
     .faq-list { max-width: 760px; margin: 0 auto; border-top: 1px solid var(--line); }
     .faq-list .accordion-item { border: 0; border-bottom: 1px solid var(--line); background: transparent; }
-    .faq-list .accordion-button { padding: 17px 3px; background: transparent; color: #40233f; font-family: var(--serif); font-size: 20px; box-shadow: none; }
+    .faq-list .accordion-button { padding: 17px 3px; background: transparent; color: #40233f; font-family: var(--serif); font-size: 22px; font-weight: 600; box-shadow: none; }
     .faq-list .accordion-button::after { width: 12px; height: 12px; background-size: 12px; }
-    .faq-list .accordion-body { padding: 0 30px 17px 3px; color: var(--muted); font-size: 16px; }
+    .faq-list .accordion-body { padding: 0 30px 17px 3px; color: var(--muted); font-size: 16px; font-weight: 500; }
     .closing-band { padding: 44px 0; color: #f9eef8; background: linear-gradient(100deg, #42103b, #2c0c2c); text-align: center; }
     .closing-band .star { display: block; color: #d7b56c; font-size: 19px; }
     .closing-band h2 { margin: 4px 0 6px; font-size: clamp(29px, 3.4vw, 41px); line-height: 1; }
     .closing-band p { margin: 0; color: #d1bfd1; font-size: 16px; }
     .sticky-offer-bar { position: fixed; z-index: 1040; right: 0; bottom: calc(12px + env(safe-area-inset-bottom)); left: 0; display: grid; width: min(980px, calc(100% - 28px)); grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 18px; margin: auto; padding: 13px 16px; border: 1px solid rgba(188,155,87,.48); border-radius: 18px; background: rgba(255,253,248,.96); box-shadow: 0 15px 42px rgba(34,9,36,.22); backdrop-filter: blur(14px); }
     .sticky-offer-copy { min-width: 0; }
-    .sticky-offer-urgency { margin: 0 0 2px; color: #a62c64; font-size: 13px; font-weight: 700; }
-    .sticky-offer-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 10px; color: #6f6171; font-size: 13px; }
+    .sticky-offer-urgency { margin: 0 0 2px; color: #a62c64; font-size: 14px; font-weight: 700; }
+    .sticky-offer-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 10px; color: #6f6171; font-size: 14px; font-weight: 500; }
     .sticky-offer-count time { color: #351435; font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: .03em; }
-    .sticky-offer-button { display: grid; min-width: 182px; justify-items: center; gap: 0; padding: 9px 17px; border-radius: 13px; font-size: 12px; line-height: 1.35; }
+    .sticky-offer-button { display: grid; min-width: 182px; justify-items: center; gap: 0; padding: 9px 17px; border-radius: 13px; font-size: 16px; line-height: 1.35; }
     .sticky-offer-button strong { font-family: var(--serif); font-size: 24px; line-height: 1.05; }
     .modal-content { overflow: hidden; border: 1px solid #d9c597; border-radius: 14px; background: #fffaf3; }
     .modal-header { border-bottom-color: #eadfcf; }
@@ -575,6 +562,7 @@
       .steps-row::before { display: none; }
       .step-card { margin-bottom: 25px; }
       .meta-bar { justify-content: flex-start; }
+      .btn-outline-gold { display: none;}
       .carousel-slide { flex-basis: calc((100% - 18px) / 2); }
       .testimonial-controls { margin-top: -3px; }
       .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 210px 145px 145px; gap: 9px; }
@@ -653,20 +641,19 @@
             </div>
             <p class="month-note">Month and year will be added once confirmed.</p>
           </div>
-          <div class="col-lg-5 col-xl-4 offset-xl-1" id="register">
+          <div class="col-lg-5 col-xl-5" id="register">
             <div class="register-card">
               <div class="register-head">
                 <div><p class="eyebrow">Registration</p><h2>Join the 3-Day Webinar</h2></div>
                 <div class="fee-tag"><strong>₹999</strong><small>3-day pass</small></div>
               </div>
-              <p class="form-intro">Add your details to continue to the webinar payment.</p>
               <form id="registrationForm">
                 <div class="mb-3">
-                  <label class="form-label" for="fullName">Your name</label>
+                  <label class="form-label" for="fullName">Your Name</label>
                   <input class="form-control" id="fullName" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
                 </div>
                 <div class="mb-3">
-                  <label class="form-label" for="phone">Phone or WhatsApp number</label>
+                  <label class="form-label" for="phone">Phone Number</label>
                   <input class="form-control" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{8,18}" placeholder="+91 00000 00000" required>
                 </div>
                 <div class="mb-3">
@@ -683,7 +670,7 @@
                     <option>Learning tarot</option>
                   </select>
                 </div>
-                <button class="btn-berry w-100" type="submit">Continue to Razorpay · ₹999</button>
+                <button class="btn-berry w-100" type="submit">Reserve your seat · ₹999</button>
                 <p class="form-hint">Payment will continue through Razorpay after the payment link is connected.</p>
                 <p class="form-status" id="formStatus" aria-live="polite"></p>
               </form>
@@ -760,7 +747,7 @@
               <div class="service-copy">
                 <h3>Love &amp; Relationship Tarot Reading</h3>
                 <p>Explore questions about love, relationships, emotional connection and relationship patterns. Gain a fresh perspective on your situation and the choices available to you.</p>
-                <a class="service-link" href="#register">Discuss Your Questions →</a>
+                <a class="service-link" href="#register">Explore More →</a>
               </div>
             </article>
           </div>
@@ -770,7 +757,7 @@
               <div class="service-copy">
                 <h3>Career &amp; Business Tarot Reading</h3>
                 <p>Thinking about a professional change or an important business decision? Explore your concerns, possible opportunities and the considerations that may help you move forward.</p>
-                <a class="service-link" href="#register">Explore Career Guidance →</a>
+                <a class="service-link" href="#register">Explore More →</a>
               </div>
             </article>
           </div>
@@ -780,7 +767,7 @@
               <div class="service-copy">
                 <h3>Personal Clarity &amp; Decision-Making</h3>
                 <p>When you have several choices or feel uncertain about your next step, a reading can help you reflect on the situation, examine patterns and clarify your priorities.</p>
-                <a class="service-link" href="#register">Find a Fresh Perspective →</a>
+                <a class="service-link" href="#register">Explore More →</a>
               </div>
             </article>
           </div>
@@ -797,9 +784,9 @@
           <p>Three live sessions, one clear progression. Each evening runs from 7:00 to 8:30 PM IST.</p>
         </div>
         <div class="row g-3 webinar-session-grid">
-          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-day">Day one</span><span class="webinar-session-number">01</span></div><span class="webinar-session-time">23rd · 7:00–8:30 PM</span></div><h3>Tarot Foundations</h3><ul class="agenda-points"><li>Understand the deck and the Major and Minor Arcana.</li><li>Explore suits, symbols and the meaning behind each card.</li><li>Try a simple exercise to get comfortable with tarot.</li></ul></article></div>
-          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-day">Day two</span><span class="webinar-session-number">02</span></div><span class="webinar-session-time">24th · 7:00–8:30 PM</span></div><h3>Questions &amp; Context</h3><ul class="agenda-points"><li>Shape useful questions for a tarot reading.</li><li>Explore relationship, work and life-decision examples.</li><li>Bring intuition together with card meanings.</li></ul></article></div>
-          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-day">Day three</span><span class="webinar-session-number">03</span></div><span class="webinar-session-time">25th · 7:00–8:30 PM</span></div><h3>Reading &amp; Reflection</h3><ul class="agenda-points"><li>Follow a simple spread from start to finish.</li><li>Connect cards into a reading with context.</li><li>Practise, reflect and consider possible next steps.</li></ul></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-number">Day 01</span></div><span class="webinar-session-time">23rd · 7:00-8:30 PM</span></div><h3>Tarot Foundations</h3><ul class="agenda-points"><li>Understand the deck and the Major and Minor Arcana.</li><li>Explore suits, symbols and the meaning behind each card.</li><li>Try a simple exercise to get comfortable with tarot.</li></ul></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-number">Day 02</span></div><span class="webinar-session-time">24th · 7:00-8:30 PM</span></div><h3>Questions &amp; Context</h3><ul class="agenda-points"><li>Shape useful questions for a tarot reading.</li><li>Explore relationship, work and life-decision examples.</li><li>Bring intuition together with card meanings.</li></ul></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-number">Day 03</span></div><span class="webinar-session-time">25th · 7:00-8:30 PM</span></div><h3>Reading &amp; Reflection</h3><ul class="agenda-points"><li>Follow a simple spread from start to finish.</li><li>Connect cards into a reading with context.</li><li>Practise, reflect and consider possible next steps.</li></ul></article></div>
         </div>
         <div class="price-strip">
           <div><strong>One pass · all three sessions · ₹999</strong><span>Live online · 90 minutes each evening · IST</span></div>
@@ -873,34 +860,40 @@
         </div>
         <div class="row g-4">
           <div class="col-lg-4"><article class="chat-testimonial">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">KD</span><div><span class="chat-testimonial-name">Kavita D. · Mumbai</span><span class="chat-testimonial-label">Personal reading</span></div></div>
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
+            </svg></span><div><span class="chat-testimonial-name">Kavita D. · Mumbai</span></div></div>
             <div class="chat-testimonial-body"><blockquote class="chat-bubble">Monica's reading felt specific and grounded. It helped me think through a decision I'd been putting off.</blockquote></div>
-            <div class="chat-testimonial-foot"><span>Client testimonial</span><span class="chat-tag">Tarot reading</span></div>
           </article></div>
           <div class="col-lg-4"><article class="chat-testimonial">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">MS</span><div><span class="chat-testimonial-name">Meera S. · New Jersey</span><span class="chat-testimonial-label">Online session</span></div></div>
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
+            </svg></span><div><span class="chat-testimonial-name">Meera S. · New Jersey</span></div></div>
             <div class="chat-testimonial-body"><blockquote class="chat-bubble">The online session felt personal, and the time difference was handled smoothly.</blockquote></div>
-            <div class="chat-testimonial-foot"><span>Client testimonial</span><span class="chat-tag">Online reading</span></div>
           </article></div>
           <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">03</span><div><span class="chat-testimonial-name">Client story 03</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
+            </svg></span><div><span class="chat-testimonial-name">Client story 03</span></div></div>
             <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 03</span></div>
           </article></div>
           <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">04</span><div><span class="chat-testimonial-name">Client story 04</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
+            </svg></span><div><span class="chat-testimonial-name">Client story 04</span></div></div>
             <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 04</span></div>
           </article></div>
           <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">05</span><div><span class="chat-testimonial-name">Client story 05</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
+            </svg></span><div><span class="chat-testimonial-name">Client story 05</span></div></div>
             <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 05</span></div>
           </article></div>
           <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true">06</span><div><span class="chat-testimonial-name">Client story 06</span><span class="chat-testimonial-label">Testimonial slot</span></div></div>
+            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
+            </svg></span><div><span class="chat-testimonial-name">Client story 06</span></div></div>
             <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-            <div class="chat-testimonial-foot"><span>Awaiting client feedback</span><span class="chat-tag">Slot 06</span></div>
           </article></div>
         </div>
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
@@ -922,25 +915,25 @@
         <div class="video-track carousel-track" id="videoTrack" aria-label="Client video testimonials">
           <article class="video-slide carousel-slide">
             <div class="video-card">
-              <div class="video-poster"><img src="assets/tarot-love.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="0" aria-label="Open video testimonial one">▶</button><span class="poster-label">Client story · video 01</span></div>
+              <div class="video-poster"><img src="assets/tarot-love.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="0" aria-label="Open video testimonial one">▶</button></div>
               <div class="video-copy"><h3>A fresh perspective</h3><p>Video testimonial slot · ready for your clip</p></div>
             </div>
           </article>
           <article class="video-slide carousel-slide">
             <div class="video-card">
-              <div class="video-poster"><img src="assets/monica-session.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="1" aria-label="Open video testimonial two">▶</button><span class="poster-label">Client story · video 02</span></div>
+              <div class="video-poster"><img src="assets/monica-session.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="1" aria-label="Open video testimonial two">▶</button></div>
               <div class="video-copy"><h3>Guidance that feels personal</h3><p>Video testimonial slot · ready for your clip</p></div>
             </div>
           </article>
           <article class="video-slide carousel-slide">
             <div class="video-card">
-              <div class="video-poster"><img src="assets/client-session.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="2" aria-label="Open video testimonial three">▶</button><span class="poster-label">Client story · video 03</span></div>
+              <div class="video-poster"><img src="assets/client-session.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="2" aria-label="Open video testimonial three">▶</button></div>
               <div class="video-copy"><h3>Space to explore what matters</h3><p>Video testimonial slot · ready for your clip</p></div>
             </div>
           </article>
           <article class="video-slide carousel-slide">
             <div class="video-card">
-              <div class="video-poster"><img src="assets/cards-gallery.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="3" aria-label="Open video testimonial four">▶</button><span class="poster-label">Client story · video 04</span></div>
+              <div class="video-poster"><img src="assets/cards-gallery.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="3" aria-label="Open video testimonial four">▶</button></div>
               <div class="video-copy"><h3>Another story is waiting</h3><p>Video testimonial slot · ready for your clip</p></div>
             </div>
           </article>
@@ -955,8 +948,8 @@
           <div class="carousel-track" id="reviewTrack" aria-label="Client reviews">
             <article class="carousel-slide"><div class="quote-card"><div class="quote-mark">“</div><blockquote>Monica's reading felt specific and grounded, and helped me think through a decision I had been putting off.</blockquote><cite>Kavita D. — Mumbai</cite></div></article>
             <article class="carousel-slide"><div class="quote-card"><div class="quote-mark">“</div><blockquote>The online session felt personal, and the time difference was handled smoothly.</blockquote><cite>Meera S. — New Jersey, USA</cite></div></article>
-            <article class="carousel-slide"><div class="quote-card review-placeholder"><p class="eyebrow">Client story</p><h3>More reviews coming soon</h3><p>Add another approved client review here when it is available.</p></div></article>
-            <article class="carousel-slide"><div class="quote-card review-placeholder"><p class="eyebrow">Your experience</p><h3>Your story could be next</h3><p>New client stories appear here once they are shared and approved.</p></div></article>
+            <article class="carousel-slide"><div class="quote-card"><p class="eyebrow">Client story</p><h3>More reviews coming soon</h3><p>Add another approved client review here when it is available.</p></div></article>
+            <article class="carousel-slide"><div class="quote-card"><p class="eyebrow">Your experience</p><h3>Your story could be next</h3><p>New client stories appear here once they are shared and approved.</p></div></article>
           </div>
         </div>
         <div class="slider-dots" id="reviewDots" aria-label="Choose a client review slide"></div>
