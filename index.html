@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#310d31">
   <meta name="description" content="Join Divine Monica Harsh for a three-day live tarot webinar on the 23rd, 24th and 25th. Three evening sessions, 7:00-8:30 PM IST.">
-  <title>Find Clarity — 3-Day Tarot Webinar with Divine Monica Harsh</title>
+  <title>3-Day Tarot Webinar with Divine Monica Harsh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,8 +26,15 @@
       --serif: "Cormorant Garamond", Georgia, serif;
       --sans: "DM Sans", Arial, sans-serif;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+        box-sizing: border-box;
+        
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       padding-bottom: 112px;
@@ -37,26 +44,50 @@
       font-size: 16px;
       line-height: 1.65;
     }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    a {
+        color: inherit;
+    }
+
     .site-header {
       color: #fff8ef;
       background: #290b2b;
       border-bottom: 1px solid rgba(244, 216, 167, .12);
     }
+    
     .top-note {
       padding: 8px 16px;
       color: #d8c3d6;
       background: rgba(255,255,255,.035);
       text-align: center;
-      font-size: 10px;
+      font-size: 14px;
+      font-weight: 600;
       letter-spacing: .15em;
       text-transform: uppercase;
     }
-    .nav-wrap { padding: 16px 0; }
-    .navbar-toggler { border-color: rgba(223, 194, 142, .5); padding: 6px 8px; }
-    .navbar-toggler:focus { box-shadow: 0 0 0 .15rem rgba(211,177,111,.22); }
-    .navbar-toggler-icon { filter: invert(1) sepia(.25) saturate(.7); }
+
+    .nav-wrap {
+        padding: 16px 0;
+    }
+
+    .navbar-toggler {
+        border-color: rgba(223, 194, 142, .5);
+        padding: 6px 8px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 .15rem rgba(211,177,111,.22);
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1) sepia(.25) saturate(.7);
+    }
+
     .brand {
       display: inline-flex;
       align-items: center;
@@ -64,6 +95,7 @@
       color: #fffaf2;
       text-decoration: none;
     }
+
     .brand-mark {
       display: grid;
       width: 39px;
@@ -75,7 +107,14 @@
       font-family: var(--serif);
       font-size: 22px;
     }
-    .brand-name { display: block; font-family: var(--serif); font-size: 20px; line-height: 1; }
+
+    .brand-name {
+        display: block;
+        font-family: var(--serif);
+        font-size: 20px;
+        line-height: 1;
+    }
+
     .brand-caption {
       display: block;
       margin-top: 4px;
@@ -84,23 +123,29 @@
       letter-spacing: .14em;
       text-transform: uppercase;
     }
-    .nav-links { gap: 25px; }
+
+    .nav-links {
+        gap: 25px;
+    }
+
     .nav-links a {
       color: #e9dfea;
       font-size: 12px;
       text-decoration: none;
       transition: color .2s ease;
     }
-    .nav-links a:hover { color: #e1bd75; }
+
+    .nav-links a:hover {
+        color: #e1bd75;
+    }
+
     .hero {
       position: relative;
       overflow: hidden;
       color: #fff9f1;
-      background:
-        radial-gradient(ellipse at 77% 7%, rgba(107, 4, 101, .65), transparent 36%),
-        radial-gradient(ellipse at 1% 95%, rgba(135, 20, 57, .32), transparent 28%),
-        linear-gradient(115deg, #3b1037 0%, #310d31 56%, #280b2d 100%);
+      background: radial-gradient(ellipse at 77% 7%, rgba(107, 4, 101, .65), transparent 36%), radial-gradient(ellipse at 1% 95%, rgba(135, 20, 57, .32), transparent 28%), linear-gradient(115deg, #3b1037 0%, #310d31 56%, #280b2d 100%);
     }
+
     .hero::after {
       position: absolute;
       top: 70px;
@@ -113,18 +158,41 @@
       box-shadow: 0 0 0 35px rgba(207,169,97,.025), 0 0 0 70px rgba(207,169,97,.018);
       pointer-events: none;
     }
-    .hero-inner { position: relative; z-index: 1; padding-top: 66px; padding-bottom: 78px; }
-    .hero-mobile-image-wrap { display: none; }
-    .hero-mobile-image { display: block; width: 100%; height: 300px; border: 1px solid rgba(222,185,121,.42); border-radius: 16px; object-fit: cover; object-position: center 10%; box-shadow: 0 14px 32px rgba(14,2,18,.24); }
+
+    .hero-inner {
+        position: relative;
+        z-index: 1;
+        padding-top: 66px;
+        padding-bottom: 78px;
+    }
+
+    .hero-mobile-image-wrap {
+        display: none;
+    }
+
+    .hero-mobile-image {
+        display: block;
+        width: 100%;
+        height: 300px;
+        border: 1px solid rgba(222,185,121,.42);
+        border-radius: 16px;
+        object-fit: cover;
+        object-position: center 10%;
+        box-shadow: 0 14px 32px rgba(14,2,18,.24);
+    }
+
     .eyebrow {
       margin-bottom: 15px;
       color: var(--gold);
-      font-size: 10px;
+      font-size: 14px;
       font-weight: 700;
       letter-spacing: .22em;
       text-transform: uppercase;
     }
-    h1, h2, h3, h4, .serif { font-family: var(--serif); font-weight: 500; }
+
+    h1, h2, h3, h4, .serif {
+        font-family: var(--serif); font-weight: 500;
+    }
     .hero h1 {
       max-width: 538px;
       margin: 0 0 20px;
@@ -132,9 +200,21 @@
       line-height: .97;
       letter-spacing: -.035em;
     }
-    .hero h1 em { color: #d7b269; font-weight: 500; }
-    .hero-copy { max-width: 570px; color: #dbcbd9; font-size: 16px; }
-    .event-details { display: grid; gap: 9px; max-width: 590px; margin-top: 28px; }
+    .hero h1 em {
+        color: #d7b269;
+        font-weight: 500;
+    }
+    .hero-copy {
+        max-width: 570px;
+        color: #dbcbd9;
+        font-size: 17px;
+    }
+    .event-details {
+        display: grid;
+        gap: 9px;
+        max-width: 590px;
+        margin-top: 28px;
+    }
     .event-date-time-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -145,998 +225,1964 @@
       border-radius: 11px;
       background: rgba(255,255,255,.045);
     }
-    .event-detail-cell { display: flex; flex-direction: column; justify-content: center; }
-    .event-detail-cell + .event-detail-cell { padding-left: 20px; border-left: 1px solid rgba(222,185,121,.25); }
-    .event-row-label { display: block; margin-bottom: 3px; color: #d1ad6c; font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-    .event-row-value { display: block; color: #fffaf4; font-size: 19px; font-weight: 600; }
-    .event-date-time-row small { color: #cbbac9; font-size: 12px; }
-    .event-row { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
-    .event-price-row { min-height: 68px; flex-direction: column; align-items: center; gap: 9px; padding: 12px; border-color: rgba(222,185,121,.36); background: rgba(255,255,255,.075); text-align: center; }
+    .event-detail-cell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .event-detail-cell + .event-detail-cell {
+        padding-left: 20px;
+        border-left: 1px solid rgba(222,185,121,.25);
+    }
+    .event-row-label {
+        display: block;
+        margin-bottom: 3px;
+        color: #d1ad6c;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+    }
+    .event-row-value {
+        display: block;
+        color: #fffaf4;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .event-date-time-row small {
+        color: #cbbac9;
+        font-size: 15px;
+    }
+    .event-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .event-price-row {
+        min-height: 68px;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px; padding: 12px;
+        border-color: rgba(222,185,121,.36); background: rgba(255,255,255,.075); text-align: center; }
+
     .event-price-copy { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 0; }
-    .event-price-copy strong { color: #e0bc75; font-family: var(--serif); font-size: 31px; font-weight: 600; line-height: 1; }
+
+    .event-price-copy strong { color: #e0bc75; font-family: var(--sans); font-size: 31px; font-weight: 600; line-height: 1; }
+
     .event-price-copy span { color: #e7dce8; font-size: 15px; }
+
     .event-price-cta { min-width: 235px; }
+
     .month-note { margin: 9px 0 0; color: #cbbac9; font-size: 13px; }
+
     .metrics-band { padding: 18px 0; border-bottom: 1px solid #eee5da; background: #fffdf8; }
+
     .metric-item { padding: 2px 20px; border-right: 1px solid #eee2d4; text-align: center; }
+
     .metric-item:last-child { border-right: 0; }
+
     .metric-item strong { display: block; color: #8e4c89; font-family: var(--serif); font-size: 42px; font-weight: 600; line-height: 1; }
-    .metric-item span { display: block; margin-top: 5px; color: #716575; font-size: 18px; }
+
+    .metric-item span {
+        display: block;
+        margin-top: 5px;
+        color: #716575;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
     .register-card {
+
       position: relative;
+
       overflow: hidden;
+
       padding: 26px 25px 22px;
+
       border: 1px solid #eadbca;
+
       border-top: 4px solid #ae1491;
+
       border-radius: 18px;
+
       background: #fffdf9;
+
       box-shadow: 0 22px 65px rgba(12, 2, 16, .25);
+
     }
+
     .register-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 8px; }
+
     .register-card .eyebrow { margin-bottom: 4px; color: #9f7840; font-size: 10px; }
+
     .register-card h2 { max-width: 300px; margin: 0; color: #351435; font-size: 32px; line-height: .98; }
+
     .fee-tag { display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 0 0 68px; min-height: 68px; border: 1px solid #e1c994; border-radius: 15px; background: #f8f0fa; }
-    .fee-tag strong { color: #8e3487; font-family: var(--serif); font-size: 25px; font-weight: 700; line-height: 1; }
+
+    .fee-tag strong { color: #8e3487; font-family: var(--sans); font-size: 25px; font-weight: 700; line-height: 1; }
+
     .fee-tag small { margin-top: 4px; color: #746477; font-size: 9px; }
+
     .form-label { margin-bottom: 5px; color: #4f3d50; font-size: 16px; font-weight: 600; }
+
     .register-card .form-control, .register-card .form-select {
+
       min-height: 46px;
+
       border-color: #e7dcd0;
+
       border-radius: 9px;
+
       background-color: #fff;
+
       color: #39253a;
+
       font-size: 14px;
+
       box-shadow: none;
+
     }
+
     .register-card .form-control:focus, .register-card .form-select:focus { border-color: #b851a7; box-shadow: 0 0 0 .2rem rgba(184,81,167,.14); }
+
     .btn-berry {
+
       display: inline-flex;
+
       min-height: 45px;
+
       align-items: center;
+
       justify-content: center;
+
       padding: 12px 22px;
+
       border: 0;
+
       border-radius: 99px;
+
       background: linear-gradient(100deg, #a00c9d 0%, #c4165b 72%, #c32943 100%);
+
       color: #fff;
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 9px 20px rgba(130, 13, 89, .22);
-      transition: transform .2s ease, box-shadow .2s ease;
-      animation: continuousCtaShake 1.45s ease-in-out infinite;
-      will-change: translate;
-    }
-    .btn-berry:hover { color: #fff; transform: translateY(-2px); box-shadow: 0 13px 26px rgba(130,13,89,.3); }
-    .btn-outline-gold, .service-link { animation: continuousCtaShake 1.45s ease-in-out infinite; will-change: translate; }
-    @keyframes continuousCtaShake {
-      0%, 100% { translate: 0 0; }
-      25% { translate: -1.25px 0; }
-      50% { translate: 1.25px 0; }
-      75% { translate: -.7px 0; }
-    }
-    .btn-outline-gold {
-      display: inline-flex;
-      min-height: 44px;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 20px;
-      border: 1px solid #d3b16f;
-      border-radius: 99px;
-      color: #a00c9d;
-      font-size: 16px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background .2s ease;
-    }
-    .btn-outline-gold:hover { background: rgba(211,177,111,.12); color: #fff; }
-    .form-hint { margin: 11px 0 0; color: #756877; font-size: 12px; text-align: center; }
-    .form-status { min-height: 18px; margin: 9px 0 0; color: #7c3d75; font-size: 12px; text-align: center; }
-    .section-pad { padding: 88px 0; }
-    .section-pad-lg { padding: 102px 0; }
-    .bg-cream { background: var(--cream); }
-    .bg-lavender { background: var(--lavender); }
-    .section-heading { max-width: 720px; margin: 0 auto 38px; text-align: center; }
-    .section-heading .eyebrow { margin-bottom: 10px; }
-    .section-heading h2 { margin: 0; color: var(--ink); font-size: clamp(34px, 4vw, 48px); line-height: 1.02; }
-    .section-heading h2::after {
-      display: block;
-      width: 55px;
-      height: 1px;
-      margin: 18px auto 16px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      content: "";
-    }
-    .section-heading p { max-width: 650px; margin: 0 auto; color: var(--muted); font-size: 16px; font-weight: 500; }
-    .section-cta { margin-top: 30px; text-align: center; }
-    .metrics-band .section-cta { margin-top: 19px; }
-    .closing-band .section-cta { margin-top: 20px; }
-    .recognition-card {
-      overflow: hidden;
-      border: 1px solid #eee4d8;
-      border-radius: 12px;
-      background: #fffdfa;
-      box-shadow: 0 12px 28px rgba(58, 31, 42, .08);
-    }
-    .recognition-photo { width: 100%; height: 340px; object-fit: cover; object-position: center 42%; }
-    .recognition-copy { padding: 32px 38px; }
-    .recognition-copy .eyebrow { margin-bottom: 8px; font-size: 16px; }
-    .recognition-copy h3 { margin: 0 0 12px; font-size: 31px; }
-    .recognition-copy p { margin: 0; color: var(--muted); font-size: 16px; }
-    .press-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 40px; align-items: center; margin-top: 37px; }
-    .press-row span { color: #74677a; font-family: var(--serif); font-size: 18px; }
-    .press-label { width: 100%; margin-bottom: -8px; color: #ad8d50 !important; font-family: var(--sans) !important; font-size: 18px !important; font-weight: 700; letter-spacing: .2em; text-align: center; text-transform: uppercase; }
-    .icon-card {
-      height: 100%;
-      padding: 23px 22px;
-      border: 1px solid #eee2d5;
-      border-radius: 13px;
-      background: #fffdfb;
-      box-shadow: 0 9px 20px rgba(53, 20, 53, .055);
-    }
-    .icon-circle { display: grid; width: 50px; height: 50px; place-items: center; margin-bottom: 15px; border: 1px solid #dfc99e; border-radius: 50%; color: #ae56b2; font-size: 30px; font-weight: bold; }
-    .icon-card h3 { margin: 0 0 7px; color: #4a2449; font-size: 23px; line-height: 1; }
-    .icon-card p { margin: 0; color: #766b78; font-size: 16px; }
-    .service-card { height: 100%; overflow: hidden; border: 1px solid #eadfce; border-radius: 12px; background: #fffdfa; box-shadow: 0 10px 22px rgba(53,20,53,.07); }
-    .service-card img { width: 100%; height: 215px; object-fit: cover; }
-    .service-copy { padding: 20px 21px 21px; }
-    .service-copy h3 { margin: 0 0 9px; font-size: 25px; font-weight: 500; line-height: 1.05; }
-    .service-copy p { min-height: 120px; margin: 0 0 15px; color: var(--muted); font-size: 16px; }
-    .service-link { display: inline-block; color: #9d239d; font-size: 13px; font-weight: 700; text-decoration: none; }
-    .service-link:hover { color: #bd174d; }
-    .webinar-series { position: relative; overflow: hidden; color: #fff7f0; background: radial-gradient(ellipse at 10% 10%, rgba(125,28,109,.45), transparent 40%), radial-gradient(ellipse at 95% 95%, rgba(140,36,72,.32), transparent 38%), #300d31; }
-    .webinar-series .section-heading h2 { color: #fff9f3; }
-    .webinar-series .section-heading p { color: #d2c1d2; }
-    .webinar-series .section-heading .eyebrow { color: #d8b777; }
-    .webinar-session { position: relative; height: 100%; overflow: hidden; padding: 25px 23px 27px; border: 1px solid rgba(223,190,135,.3); border-radius: 18px; background: linear-gradient(150deg,rgba(255,255,255,.095),rgba(255,255,255,.035)); box-shadow: 0 15px 32px rgba(11,2,16,.18); }
-    .webinar-session::after { position: absolute; top: -72px; right: -66px; width: 180px; height: 180px; border: 1px solid rgba(220,185,122,.14); border-radius: 50%; content: ""; pointer-events: none; }
-    .webinar-session-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(227,202,166,.2); }
-    .webinar-session-number { display: block; margin-top: 4px; color: #fff7e9; font-family: var(--sans); font-size: 25px; line-height: .9; }
-    .webinar-session-time { padding: 7px 10px; border: 1px solid rgba(215,181,112,.34); border-radius: 99px; color: #f0ddbb; font-size: 14px; white-space: nowrap; }
-    .webinar-session h3 { position: relative; z-index: 1; margin: 0; color: #fff9f2; font-size: 27px; line-height: 1.02; }
-    .webinar-session .agenda-points { position: relative; z-index: 1; gap: 11px; margin-top: 16px; }
-    .webinar-session .agenda-points li { color: #d8cbd8; }
-    .webinar-session .agenda-points li::before { color: #d8b777; }
-    .webinar-series .price-strip { border-color: rgba(225,190,137,.26); background: rgba(255,255,255,.065); }
-    .webinar-series .price-strip strong { color: #fff8ef; }
-    .webinar-series .price-strip span { color: #d2c1d2; }
-    .agenda-points { display: grid; gap: 9px; margin: 13px 0 0; padding: 0; list-style: none; }
-    .agenda-points li { position: relative; padding-left: 19px; color: var(--muted); font-size: 16px; line-height: 1.45; }
-    .agenda-points li::before { position: absolute; top: .1em; left: 0; color: #a34ba1; content: "✦"; font-size: 12px; }
-    .agenda-date { display: inline-block; margin-top: 15px; color: #a4864c; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
-    .why-card { height: 100%; padding: 25px 24px; border: 1px solid #eadfce; border-radius: 14px; background: rgba(255,253,250,.9); box-shadow: 0 10px 22px rgba(53,20,53,.055); }
-    .why-card .icon-circle { margin: 0 0 18px; }
-    .why-card h3 { margin: 0 0 8px; color: var(--ink); font-size: 24px; }
-    .why-card p { margin: 0; color: var(--muted); font-size: 16px; }
-    #why-choose-us { background: radial-gradient(ellipse at 92% 4%,rgba(161,29,108,.34),transparent 36%),linear-gradient(135deg,#3a0d3b,#5a123f 58%,#351034); }
-    #why-choose-us .section-heading h2 { color: #fff8f1; }
-    #why-choose-us .section-heading p { color: #d8c5d7; }
-    #why-choose-us .section-heading .eyebrow { color: #e4c37d; }
-    #why-choose-us .why-card { border-color: rgba(232,192,137,.4); background: linear-gradient(145deg,#fffaf5,#f8edf5); }
-    .price-strip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 31px;
-      padding: 20px 23px;
-      border: 1px solid #ecdfc9;
-      border-radius: 13px;
-      background: #fffdf9;
-      box-shadow: 0 8px 20px rgba(53,20,53,.045);
-      text-align: center;
-    }
-    .price-strip strong { display: block; color: var(--ink); font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1; }
-    .price-strip span { display: block; margin-top: 5px; color: var(--muted); font-size: 16px; }
-    .guide-photo-wrap { position: relative; padding: 0 12px 12px 0; }
-    .guide-photo-wrap::after { position: absolute; right: 0; bottom: 0; left: 12px; height: 85%; border: 1px solid #d6be89; border-radius: 13px; content: ""; z-index: 0; }
-    .guide-photo { position: relative; z-index: 1; width: 100%; height: 425px; border-radius: 13px; object-fit: cover; object-position: center; }
-    .guide-copy .eyebrow { margin-bottom: 8px; }
-    .guide-copy h2 { margin: 0 0 17px; font-size: clamp(37px, 4vw, 49px); line-height: .98; }
-    .guide-copy p { margin-bottom: 13px; color: var(--muted); font-size: 16px; }
-    .gold-list { margin: 16px 0 22px; padding: 0; list-style: none; }
-    .gold-list li { position: relative; margin: 7px 0; padding-left: 16px; color: #5c4d61; font-size: 16px; }
-    .gold-list li::before { position: absolute; left: 0; color: #bc9b57; content: "◆"; font-size: 7px; top: 4px; }
-    .steps-row { position: relative; }
-    .steps-row::before { position: absolute; top: 40px; left: 16%; right: 16%; height: 1px; background: #e5d5b2; content: ""; }
-    .step-card { position: relative; padding: 0 14px; text-align: center; }
-    .step-num {
-      display: grid;
-      width: 46px;
-      height: 46px;
-      place-items: center;
-      margin: 0 auto 16px;
-      border: 1px solid #d9c18e;
-      border-radius: 50%;
-      background: var(--cream);
-      color: #a74ca5;
-      font-family: var(--serif);
-      font-size: 25px;
-      font-weight: 600;
-    }
-    .step-card h3 { margin: 0 0 8px; font-size: 25px; line-height: 1; }
-    .step-card p { max-width: 300px; margin: 0 auto; color: var(--muted); font-size: 16px; }
-    .meta-bar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 10px 20px;
-      margin-top: 35px;
-      padding: 17px 20px;
-      border: 1px solid #eee1d0;
-      border-radius: 11px;
-      background: #fffdf9;
-      box-shadow: 0 8px 18px rgba(53,20,53,.04);
-    }
-    .meta-bar span { color: #6e6171; font-size: 16px; }
-    .meta-bar b { margin-right: 7px; color: #bd9b57; font-size: 16px; }
-    .section-note { margin: 14px 0 0; color: #8b7d8b; font-size: 14px; text-align: center; }
-    .testimonials {
-      overflow: hidden;
-      color: #fdf6f3;
-      background:
-        radial-gradient(ellipse at 83% 0%, rgba(92, 4, 97, .62), transparent 36%),
-        radial-gradient(ellipse at 0% 100%, rgba(110, 22, 53, .37), transparent 30%),
-        #310d31;
-    }
-    .testimonials .section-heading h2 { color: #fff9f3; }
-    .testimonials .section-heading p { color: #ccb8cc; }
-    .testimonial-controls { display: flex; justify-content: flex-end; gap: 9px; margin: -15px 0 14px; }
-    .slider-arrow {
-      display: grid;
-      width: 38px;
-      height: 38px;
-      place-items: center;
-      border: 1px solid rgba(220,188,130,.45);
-      border-radius: 50%;
-      background: transparent;
-      color: #f4d99f;
+
       font-size: 18px;
-      transition: background .2s ease;
+
+      font-weight: 700;
+
+      text-decoration: none;
+
+      box-shadow: 0 9px 20px rgba(130, 13, 89, .22);
+
+      transition: transform .2s ease, box-shadow .2s ease;
+
+      animation: continuousCtaShake 1.45s ease-in-out infinite;
+
+      will-change: translate;
+
     }
-    .slider-arrow:hover { background: rgba(220,188,130,.13); }
-    .carousel-track {
-      display: flex;
-      gap: 18px;
-      width: 100%;
-      padding: 5px 0 16px;
-      transition: transform .5s cubic-bezier(.22,.75,.25,1);
-      will-change: transform;
+
+    .btn-berry:hover { color: #fff; transform: translateY(-2px); box-shadow: 0 13px 26px rgba(130,13,89,.3); }
+
+    .btn-outline-gold, .service-link { animation: continuousCtaShake 1.45s ease-in-out infinite; will-change: translate; }
+
+    @keyframes continuousCtaShake {
+
+      0%, 100% { translate: 0 0; }
+
+      25% { translate: -1.25px 0; }
+
+      50% { translate: 1.25px 0; }
+
+      75% { translate: -.7px 0; }
+
     }
-    .video-viewport { width: 100%; overflow: hidden; }
-    .carousel-slide { flex: 0 0 calc((100% - 36px) / 3); min-width: 0; }
-    .video-card {
-      overflow: hidden;
-      height: 100%;
-      border: 1px solid rgba(225,187,131,.25);
-      border-radius: 14px;
-      background: rgba(255,255,255,.055);
-    }
-    .video-poster { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: #221127; }
-    .video-poster img { width: 100%; height: 100%; object-fit: cover; opacity: .76; transition: transform .35s ease, opacity .35s ease; }
-    .video-card:hover .video-poster img { opacity: .92; transform: scale(1.04); }
-    .video-poster::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(28,6,30,.73), transparent 70%); content: ""; }
-    .play-button {
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      left: 50%;
-      display: grid;
-      width: 56px;
-      height: 56px;
-      place-items: center;
-      transform: translate(-50%,-50%);
-      border: 1px solid rgba(255,255,255,.8);
-      border-radius: 50%;
-      background: rgba(160,12,157,.82);
-      color: #fff;
-      font-size: 19px;
-      cursor: pointer;
-      transition: transform .2s ease, background .2s ease;
-    }
-    .play-button:hover { transform: translate(-50%,-50%) scale(1.08); background: #bc174f; }
-    .video-copy { padding: 16px 18px 18px; }
-    .video-copy h3 { margin: 0 0 4px; color: #fff9f2; font-size: 25px; }
-    .video-copy p { margin: 0; color: #cdb9cb; font-size: 16px; }
-    .slider-dots { display: flex; justify-content: center; gap: 8px; margin: 11px 0 28px; }
-    .slider-dot { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%; background: rgba(237,214,177,.38); }
-    .slider-dot.active { width: 23px; border-radius: 8px; background: #d2ae68; }
-    .review-controls { margin-top: 30px; }
-    .quote-card { display: flex; height: 100%; min-height: 215px; flex-direction: column; justify-content: space-evenly; padding: 22px 23px 15px; border: 1px solid rgba(230,185,130,.2); border-radius: 12px; background: rgba(255,255,255,.035); }
-    .quote-mark { color: #d2ae68; font-family: var(--serif); font-size: 39px; line-height: .8; }
-    .quote-card blockquote { margin: 11px 0 13px; color: #fff8f2; font-family: var(--serif); font-size: 21px; line-height: 1.23; }
-    .quote-card cite { color: #c4a267; font-size: 16px; font-style: normal; }
-    .chat-testimonial { height: 100%; overflow: hidden; border: 1px solid #dce6d4; border-radius: 18px; background: #fffdfa; box-shadow: 0 14px 30px rgba(34,59,43,.09); }
-    .chat-testimonial-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; background: linear-gradient(110deg,#365f51,#2CD46B); color: #fff; }
-    .chat-testimonial-avatar { display: grid; width: 43px; height: 43px; flex: 0 0 43px; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; background: #ffffff; color: #385a4d; font-size: 13px; font-weight: 700; }
-    .chat-testimonial-name { display: block; font-size: 14px; font-weight: 700; line-height: 1.2; }
-    .chat-testimonial-body { min-height: 220px; padding: 18px; background-color: #edf2e8; background-image: radial-gradient(rgba(83,111,83,.12) .8px,transparent .8px); background-size: 14px 14px; }
-    .chat-bubble { position: relative; max-width: 92%; margin: 3px auto 0 0; padding: 15px 17px; border: 1px solid #e4e9dc; border-radius: 4px 16px 16px 16px; background: #fffef9; color: #33443a; font-size: 16px; line-height: 1.55; box-shadow: 0 4px 9px rgba(36,63,43,.06); }
-    .chat-tag { padding: 5px 9px; border-radius: 99px; background: #edf5ec; color: #486954; font-weight: 600; }
-    #whatsapp-testimonials { background: radial-gradient(ellipse at 8% 100%,rgba(163,24,100,.32),transparent 40%),linear-gradient(125deg,#310d34,#50123f 58%,#3a0b35); }
-    #whatsapp-testimonials .section-heading h2 { color: #fff8f3; }
-    #whatsapp-testimonials .section-heading p { color: #ddcadd; }
-    #whatsapp-testimonials .section-heading .eyebrow { color: #e4c37c; }
-    .chat-testimonial--pending { border-color: rgba(234,195,142,.45); }
-    .chat-testimonial--pending .chat-testimonial-body { display: flex; align-items: center; }
-    .chat-testimonial--pending .chat-bubble { width: 100%; border: 1px dashed #c7b1bf; background: rgba(255,254,249,.78); color: #665565; }
-    .chat-testimonial--pending .chat-tag { background: #f8e7f1; color: #882959; }
-    .testimonials .price-strip { border-color: rgba(229,190,137,.24); background: rgba(255,255,255,.055); }
-    .testimonials .price-strip strong { color: #fff8f2; }
-    .testimonials .price-strip span { color: #cdb9cb; }
-    .gallery-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 220px 220px; gap: 14px; }
-    .gallery-grid img { width: 100%; height: 100%; border-radius: 12px; object-fit: cover; }
-    .gallery-main { grid-column: 1; grid-row: 1 / span 2; object-position: center 31%; }
-    .gallery-cards { grid-column: 2; grid-row: 1; }
-    .gallery-calm { grid-column: 3; grid-row: 1; }
-    .gallery-award { grid-column: 2 / span 2; grid-row: 2; object-position: center 43%; }
-    .pricing-card {
-      overflow: hidden;
-      max-width: 920px;
-      margin: auto;
-      border: 1px solid #e7dac8;
-      border-radius: 14px;
-      background: #fffdfa;
-      box-shadow: 0 13px 30px rgba(53,20,53,.08);
-    }
-    .pricing-panel {
-      height: 100%;
-      min-height: 265px;
-      display: flex;
-      flex-direction: column;
+
+    .btn-outline-gold {
+
+      display: inline-flex;
+
+      min-height: 44px;
+
       align-items: center;
+
       justify-content: center;
-      padding: 34px;
-      color: #fff9ef;
-      background:
-        radial-gradient(circle at 75% 5%, rgba(128, 10, 128, .55), transparent 45%),
-        linear-gradient(145deg, #4d1048, #310d31 75%, #47102e);
+
+      padding: 10px 20px;
+
+      border: 1px solid #d3b16f;
+
+      border-radius: 99px;
+
+      color: #a00c9d;
+
+      font-size: 16px;
+
+      font-weight: 600;
+
+      text-decoration: none;
+
+      transition: background .2s ease;
+
+    }
+
+    .btn-outline-gold:hover { background: rgba(211,177,111,.12); color: #fff; }
+
+    .form-hint { margin: 11px 0 0; color: #756877; font-size: 12px; text-align: center; }
+
+    .form-status { min-height: 18px; margin: 9px 0 0; color: #7c3d75; font-size: 12px; text-align: center; }
+
+    .section-pad { padding: 88px 0; }
+
+    .section-pad-lg { padding: 102px 0; }
+
+    .bg-cream { background: var(--cream); }
+
+    .bg-lavender { background: var(--lavender); }
+
+    .section-heading { max-width: 720px; margin: 0 auto 38px; text-align: center; }
+
+    .section-heading .eyebrow { margin-bottom: 10px; }
+
+    .section-heading h2 { margin: 0; color: var(--ink); font-size: clamp(34px, 4vw, 48px); line-height: 1.02; }
+
+    .section-heading h2::after {
+
+      display: block;
+
+      width: 55px;
+
+      height: 1px;
+
+      margin: 18px auto 16px;
+
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+
+      content: "";
+
+    }
+
+    .section-heading p { max-width: 650px; margin: 0 auto; color: var(--muted); font-size: 16px; font-weight: 500; }
+
+    .section-cta { margin-top: 30px; text-align: center; }
+
+    .metrics-band .section-cta { margin-top: 19px; }
+
+    .closing-band .section-cta { margin-top: 20px; }
+
+    .recognition-card {
+
+      overflow: hidden;
+
+      border: 1px solid #eee4d8;
+
+      border-radius: 12px;
+
+      background: #fffdfa;
+
+      box-shadow: 0 12px 28px rgba(58, 31, 42, .08);
+
+    }
+
+    .recognition-photo { width: 100%; height: 340px; object-fit: cover; object-position: center 42%; }
+
+    .recognition-copy { padding: 32px 38px; }
+
+    .recognition-copy .eyebrow { margin-bottom: 8px; font-size: 16px; }
+
+    .recognition-copy h3 { margin: 0 0 12px; font-size: 31px; }
+
+    .recognition-copy p { margin: 0; color: var(--muted); font-size: 16px; }
+
+    .press-row { margin-top: 37px; }
+
+    .press-label { display: block; margin-bottom: 18px; color: #ad8d50; font-size: 18px; font-weight: 700; letter-spacing: .2em; text-align: center; text-transform: uppercase; }
+
+    .press-track { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 40px; }
+
+    .press-item { display: grid; min-width: 0; min-height: 48px; place-items: center; }
+
+    .press-item img { display: block; width: auto; max-width: 150px; height: 60px; object-fit: contain; }
+
+    .icon-card {
+
+      height: 100%;
+
+      padding: 23px 22px;
+
+      border: 1px solid #eee2d5;
+
+      border-radius: 13px;
+
+      background: #fffdfb;
+
+      box-shadow: 0 9px 20px rgba(53, 20, 53, .055);
+
+    }
+
+    .icon-circle { display: grid; width: 50px; height: 50px; place-items: center; margin-bottom: 15px; border: 1px solid #dfc99e; border-radius: 50%; color: #ae56b2; font-size: 30px; font-weight: bold; }
+
+    .icon-card h3 { margin: 0 0 7px; color: #4a2449; font-size: 23px; line-height: 1; }
+
+    .icon-card p { margin: 0; color: #766b78; font-size: 16px; }
+
+    .service-card { height: 100%; overflow: hidden; border: 1px solid #eadfce; border-radius: 12px; background: #fffdfa; box-shadow: 0 10px 22px rgba(53,20,53,.07); }
+
+    .service-card img { width: 100%; height: 215px; object-fit: cover; }
+
+    .service-copy { padding: 20px 21px 21px; }
+
+    .service-copy h3 { margin: 0 0 9px; font-size: 25px; font-weight: 500; line-height: 1.05; }
+
+    .service-copy p { min-height: 120px; margin: 0 0 15px; color: var(--muted); font-size: 16px; }
+
+    .service-link { display: inline-block; color: #9d239d; font-size: 13px; font-weight: 700; text-decoration: none; }
+
+    .service-link:hover { color: #bd174d; }
+
+    .webinar-series { position: relative; overflow: hidden; color: #fff7f0; background: radial-gradient(ellipse at 10% 10%, rgba(125,28,109,.45), transparent 40%), radial-gradient(ellipse at 95% 95%, rgba(140,36,72,.32), transparent 38%), #300d31; }
+
+    .webinar-series .section-heading h2 { color: #fff9f3; }
+
+    .webinar-series .section-heading p { color: #d2c1d2; }
+
+    .webinar-series .section-heading .eyebrow { color: #d8b777; }
+
+    .webinar-session { position: relative; height: 100%; overflow: hidden; padding: 25px 23px 27px; border: 1px solid rgba(223,190,135,.3); border-radius: 18px; background: linear-gradient(150deg,rgba(255,255,255,.095),rgba(255,255,255,.035)); box-shadow: 0 15px 32px rgba(11,2,16,.18); }
+
+    .webinar-session::after { position: absolute; top: -72px; right: -66px; width: 180px; height: 180px; border: 1px solid rgba(220,185,122,.14); border-radius: 50%; content: ""; pointer-events: none; }
+
+    .webinar-session-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(227,202,166,.2); }
+
+    .webinar-session-number { display: block; margin-top: 4px; color: #fff7e9; font-family: var(--sans); font-size: 25px; line-height: .9; }
+
+    .webinar-session-time { padding: 7px 10px; border: 1px solid rgba(215,181,112,.34); border-radius: 99px; color: #f0ddbb; font-size: 14px; white-space: nowrap; }
+
+    .webinar-session h3 { position: relative; z-index: 1; margin: 0; color: #fff9f2; font-size: 27px; line-height: 1.02; }
+
+    .webinar-session .agenda-points { position: relative; z-index: 1; gap: 11px; margin-top: 16px; }
+
+    .webinar-session .agenda-points li { color: #d8cbd8; }
+
+    .webinar-session .agenda-points li::before { color: #d8b777; }
+
+    .webinar-series .price-strip { border-color: rgba(225,190,137,.26); background: rgba(255,255,255,.065); }
+
+    .webinar-series .price-strip strong { color: #fff8ef; }
+
+    .webinar-series .price-strip span { color: #d2c1d2; }
+
+    .agenda-points { display: grid; gap: 9px; margin: 13px 0 0; padding: 0; list-style: none; }
+
+    .agenda-points li { position: relative; padding-left: 19px; color: var(--muted); font-size: 16px; line-height: 1.45; }
+
+    .agenda-points li::before { position: absolute; top: .1em; left: 0; color: #a34ba1; content: "✦"; font-size: 12px; }
+
+    .agenda-date { display: inline-block; margin-top: 15px; color: #a4864c; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+
+    .why-card { height: 100%; padding: 25px 24px; border: 1px solid #eadfce; border-radius: 14px; background: rgba(255,253,250,.9); box-shadow: 0 10px 22px rgba(53,20,53,.055); }
+
+    .why-card .icon-circle { margin: 0 0 18px; }
+
+    .why-card h3 { margin: 0 0 8px; color: var(--ink); font-size: 24px; }
+
+    .why-card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+    #why-choose-us { background: radial-gradient(ellipse at 92% 4%,rgba(161,29,108,.34),transparent 36%),linear-gradient(135deg,#3a0d3b,#5a123f 58%,#351034); }
+
+    #why-choose-us .section-heading h2 { color: #fff8f1; }
+
+    #why-choose-us .section-heading p { color: #d8c5d7; }
+
+    #why-choose-us .section-heading .eyebrow { color: #e4c37d; }
+
+    #why-choose-us .why-card { border-color: rgba(232,192,137,.4); background: linear-gradient(145deg,#fffaf5,#f8edf5); }
+
+    .price-strip {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 24px;
+
+      margin-top: 31px;
+
+      padding: 20px 23px;
+
+      border: 1px solid #ecdfc9;
+
+      border-radius: 13px;
+
+      background: #fffdf9;
+
+      box-shadow: 0 8px 20px rgba(53,20,53,.045);
+
       text-align: center;
+
     }
+
+    .price-strip strong { display: block; color: var(--ink); font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1; }
+
+    .price-strip span { display: block; margin-top: 5px; color: var(--muted); font-size: 16px; }
+
+    .guide-photo-wrap { position: relative; padding: 0 12px 12px 0; }
+
+    .guide-photo-wrap::after { position: absolute; right: 0; bottom: 0; left: 12px; height: 85%; border: 1px solid #d6be89; border-radius: 13px; content: ""; z-index: 0; }
+
+    .guide-photo { position: relative; z-index: 1; width: 100%; height: 425px; border-radius: 13px; object-fit: cover; object-position: center; }
+
+    .guide-copy .eyebrow { margin-bottom: 8px; }
+
+    .guide-copy h2 { margin: 0 0 17px; font-size: clamp(37px, 4vw, 49px); line-height: .98; }
+
+    .guide-copy p { margin-bottom: 13px; color: var(--muted); font-size: 16px; }
+
+    .gold-list { margin: 16px 0 22px; padding: 0; list-style: none; }
+
+    .gold-list li { position: relative; margin: 7px 0; padding-left: 16px; color: #5c4d61; font-size: 16px; }
+
+    .gold-list li::before { position: absolute; left: 0; color: #bc9b57; content: "◆"; font-size: 7px; top: 4px; }
+
+    .steps-row { position: relative; }
+
+    .steps-row::before { position: absolute; top: 40px; left: 16%; right: 16%; height: 1px; background: #e5d5b2; content: ""; }
+
+    .step-card { position: relative; padding: 0 14px; text-align: center; }
+
+    .step-num {
+
+      display: grid;
+
+      width: 46px;
+
+      height: 46px;
+
+      place-items: center;
+
+      margin: 0 auto 16px;
+
+      border: 1px solid #d9c18e;
+
+      border-radius: 50%;
+
+      background: var(--cream);
+
+      color: #a74ca5;
+
+      font-family: var(--serif);
+
+      font-size: 25px;
+
+      font-weight: 600;
+
+    }
+
+    .step-card h3 { margin: 0 0 8px; font-size: 25px; line-height: 1; }
+
+    .step-card p { max-width: 300px; margin: 0 auto; color: var(--muted); font-size: 16px; }
+
+    .meta-bar {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+
+      gap: 10px 20px;
+
+      margin-top: 35px;
+
+      padding: 17px 20px;
+
+      border: 1px solid #eee1d0;
+
+      border-radius: 11px;
+
+      background: #fffdf9;
+
+      box-shadow: 0 8px 18px rgba(53,20,53,.04);
+
+    }
+
+    .meta-bar span { color: #6e6171; font-size: 16px; }
+
+    .meta-bar b { margin-right: 7px; color: #bd9b57; font-size: 16px; }
+
+    .section-note { margin: 14px 0 0; color: #8b7d8b; font-size: 14px; text-align: center; }
+
+    .testimonials {
+
+      overflow: hidden;
+
+      color: #fdf6f3;
+
+      background:
+
+        radial-gradient(ellipse at 83% 0%, rgba(92, 4, 97, .62), transparent 36%),
+
+        radial-gradient(ellipse at 0% 100%, rgba(110, 22, 53, .37), transparent 30%),
+
+        #310d31;
+
+    }
+
+    .testimonials .section-heading h2 { color: #fff9f3; }
+
+    .testimonials .section-heading p { color: #ccb8cc; }
+
+    .testimonial-controls { display: flex; justify-content: flex-end; gap: 9px; margin: -15px 0 14px; }
+
+    .slider-arrow {
+
+      display: grid;
+
+      width: 38px;
+
+      height: 38px;
+
+      place-items: center;
+
+      border: 1px solid rgba(220,188,130,.45);
+
+      border-radius: 50%;
+
+      background: transparent;
+
+      color: #f4d99f;
+
+      font-size: 18px;
+
+      transition: background .2s ease;
+
+    }
+
+    .slider-arrow:hover { background: rgba(220,188,130,.13); }
+
+    .carousel-track {
+
+      display: flex;
+
+      gap: 18px;
+
+      width: 100%;
+
+      padding: 5px 0 16px;
+
+      transition: transform .5s cubic-bezier(.22,.75,.25,1);
+
+      will-change: transform;
+
+    }
+
+    .video-viewport { width: 100%; overflow: hidden; }
+
+    .carousel-slide { flex: 0 0 calc((100% - 36px) / 3); min-width: 0; }
+
+    .video-card {
+
+      overflow: hidden;
+
+      height: 100%;
+
+      border: 1px solid rgba(225,187,131,.25);
+
+      border-radius: 14px;
+
+      background: rgba(255,255,255,.055);
+
+    }
+
+    .video-poster { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: #221127; }
+
+    .video-poster img { width: 100%; height: 100%; object-fit: cover; opacity: .76; transition: transform .35s ease, opacity .35s ease; }
+
+    .video-card:hover .video-poster img { opacity: .92; transform: scale(1.04); }
+
+    .video-poster::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(28,6,30,.73), transparent 70%); content: ""; }
+
+    .play-button {
+
+      position: absolute;
+
+      z-index: 1;
+
+      top: 50%;
+
+      left: 50%;
+
+      display: grid;
+
+      width: 56px;
+
+      height: 56px;
+
+      place-items: center;
+
+      transform: translate(-50%,-50%);
+
+      border: 1px solid rgba(255,255,255,.8);
+
+      border-radius: 50%;
+
+      background: rgba(160,12,157,.82);
+
+      color: #fff;
+
+      font-size: 19px;
+
+      cursor: pointer;
+
+      transition: transform .2s ease, background .2s ease;
+
+    }
+
+    .play-button:hover { transform: translate(-50%,-50%) scale(1.08); background: #bc174f; }
+
+    .video-copy { padding: 16px 18px 18px; }
+
+    .video-copy h3 { margin: 0 0 4px; color: #fff9f2; font-size: 25px; }
+
+    .video-copy p { margin: 0; color: #cdb9cb; font-size: 16px; }
+
+    .slider-dots { display: flex; justify-content: center; gap: 8px; margin: 11px 0 28px; }
+
+    .slider-dot { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%; background: rgba(237,214,177,.38); }
+
+    .slider-dot.active { width: 23px; border-radius: 8px; background: #d2ae68; }
+
+    .review-controls { margin-top: 30px; }
+
+    .quote-card { display: flex; height: 100%; min-height: 215px; flex-direction: column; justify-content: space-evenly; padding: 22px 23px 15px; border: 1px solid rgba(230,185,130,.2); border-radius: 12px; background: rgba(255,255,255,.035); }
+
+    .quote-mark { color: #d2ae68; font-family: var(--serif); font-size: 39px; line-height: .8; }
+
+    .quote-card blockquote { margin: 11px 0 13px; color: #fff8f2; font-family: var(--serif); font-size: 21px; line-height: 1.23; }
+
+    .quote-card cite { color: #c4a267; font-size: 16px; font-style: normal; }
+
+    .review-image-card { height: auto; overflow: hidden; border: 1px solid rgba(230,190,142,.42); border-radius: 17px; background: #fffdfa; box-shadow: 0 15px 34px rgba(19,4,24,.19); transition: transform .28s ease, box-shadow .28s ease; }
+
+    .review-image-card:hover { transform: translateY(-4px); box-shadow: 0 20px 42px rgba(19,4,24,.25); }
+
+    .review-image-card img { width: 100%; height: auto; }
+
+    #whatsapp-testimonials { background: radial-gradient(ellipse at 8% 100%,rgba(163,24,100,.32),transparent 40%),linear-gradient(125deg,#310d34,#50123f 58%,#3a0b35); }
+
+    #whatsapp-testimonials .section-heading h2 { color: #fff8f3; }
+
+    #whatsapp-testimonials .section-heading p { color: #ddcadd; }
+
+    #whatsapp-testimonials .section-heading .eyebrow { color: #e4c37c; }
+
+    .testimonials .price-strip { border-color: rgba(229,190,137,.24); background: rgba(255,255,255,.055); }
+
+    .testimonials .price-strip strong { color: #fff8f2; }
+
+    .testimonials .price-strip span { color: #cdb9cb; }
+
+    .gallery-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 220px 220px; gap: 14px; }
+
+    .gallery-grid img { width: 100%; height: 100%; border-radius: 12px; object-fit: cover; }
+
+    .gallery-main { grid-column: 1; grid-row: 1 / span 2; object-position: center 31%; }
+
+    .gallery-cards { grid-column: 2; grid-row: 1; }
+
+    .gallery-calm { grid-column: 3; grid-row: 1; }
+
+    .gallery-award { grid-column: 2 / span 2; grid-row: 2; object-position: center 43%; }
+
+    .pricing-card {
+
+      overflow: hidden;
+
+      max-width: 920px;
+
+      margin: auto;
+
+      border: 1px solid #e7dac8;
+
+      border-radius: 14px;
+
+      background: #fffdfa;
+
+      box-shadow: 0 13px 30px rgba(53,20,53,.08);
+
+    }
+
+    .pricing-panel {
+
+      height: 100%;
+
+      min-height: 265px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 34px;
+
+      color: #fff9ef;
+
+      background:
+
+        radial-gradient(circle at 75% 5%, rgba(128, 10, 128, .55), transparent 45%),
+
+        linear-gradient(145deg, #4d1048, #310d31 75%, #47102e);
+
+      text-align: center;
+
+    }
+
     .pricing-panel .eyebrow { margin-bottom: 12px; font-size: 9px; }
+
     .pricing-panel strong { color: #d7b46e; font-family: var(--serif); font-size: 58px; font-weight: 600; line-height: .9; }
+
     .pricing-panel p { margin: 10px 0 0; color: #e0cfe0; font-size: 16px; }
+
     .pricing-copy { padding: 30px 34px; }
+
     .pricing-copy h3 { margin: 0 0 14px; font-size: 29px; }
+
     .pricing-copy .gold-list { margin: 0 0 19px; }
+
     .faq-list { max-width: 760px; margin: 0 auto; border-top: 1px solid var(--line); }
+
     .faq-list .accordion-item { border: 0; border-bottom: 1px solid var(--line); background: transparent; }
+
     .faq-list .accordion-button { padding: 17px 3px; background: transparent; color: #40233f; font-family: var(--serif); font-size: 22px; font-weight: 600; box-shadow: none; }
+
     .faq-list .accordion-button::after { width: 12px; height: 12px; background-size: 12px; }
+
     .faq-list .accordion-body { padding: 0 30px 17px 3px; color: var(--muted); font-size: 16px; font-weight: 500; }
+
     .closing-band { padding: 44px 0; color: #f9eef8; background: linear-gradient(100deg, #42103b, #2c0c2c); text-align: center; }
+
     .closing-band .star { display: block; color: #d7b56c; font-size: 19px; }
+
     .closing-band h2 { margin: 4px 0 6px; font-size: clamp(29px, 3.4vw, 41px); line-height: 1; }
+
     .closing-band p { margin: 0; color: #d1bfd1; font-size: 16px; }
+
     .sticky-offer-bar { position: fixed; z-index: 1040; right: 0; bottom: calc(12px + env(safe-area-inset-bottom)); left: 0; display: grid; width: min(980px, calc(100% - 28px)); grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 18px; margin: auto; padding: 13px 16px; border: 1px solid rgba(188,155,87,.48); border-radius: 18px; background: rgba(255,253,248,.96); box-shadow: 0 15px 42px rgba(34,9,36,.22); backdrop-filter: blur(14px); }
+
     .sticky-offer-copy { min-width: 0; }
+
     .sticky-offer-urgency { margin: 0 0 2px; color: #a62c64; font-size: 14px; font-weight: 700; }
+
     .sticky-offer-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 10px; color: #6f6171; font-size: 14px; font-weight: 500; }
+
     .sticky-offer-count time { color: #351435; font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: .03em; }
+
     .sticky-offer-button { display: grid; min-width: 182px; justify-items: center; gap: 0; padding: 9px 17px; border-radius: 13px; font-size: 16px; line-height: 1.35; }
+
     .sticky-offer-button strong { font-family: var(--serif); font-size: 24px; line-height: 1.05; }
+
     .modal-content { overflow: hidden; border: 1px solid #d9c597; border-radius: 14px; background: #fffaf3; }
+
     .modal-header { border-bottom-color: #eadfcf; }
+
     .modal-title { color: var(--ink); font-family: var(--serif); font-size: 28px; }
+
     .video-modal-stage { position: relative; display: grid; min-height: 240px; place-items: center; background: #210d24; color: #fff; text-align: center; }
+
     .video-modal-stage p { max-width: 480px; margin: 0; padding: 30px; color: #e0cfe0; font-size: 16px; }
+
     .video-modal-stage video, .video-modal-stage iframe { width: 100%; aspect-ratio: 16/9; border: 0; background: #17091a; }
+
     @media (max-width: 991.98px) {
+
       .nav-links { gap: 15px; }
+
       .hero-inner { padding-top: 55px; }
+
       .register-card { margin-top: 22px; }
+
       .section-pad { padding: 72px 0; }
+
       .recognition-photo { height: 300px; }
+
       .guide-photo { height: 365px; }
+
       .steps-row::before { left: 18%; right: 18%; }
+
     }
+
     @media (max-width: 767.98px) {
+
       .nav-wrap { padding: 13px 0; }
+
       .nav-links { gap: 13px; }
+
       .nav-links a { font-size: 10px; }
+
       .hero-inner { padding-top: 48px; padding-bottom: 56px; }
+
       .hero-mobile-image-wrap { display: block; margin: 0 0 25px; }
+
       .hero-mobile-image { height: clamp(225px, 68vw, 315px); }
+
       .hero h1 { font-size: clamp(45px, 12vw, 60px); }
+
       .hero-copy { font-size: 16px; }
+
       .event-details { gap: 8px; }
+
       .event-date-time-row { padding: 11px 12px; }
+
       .event-detail-cell + .event-detail-cell { padding-left: 13px; }
+
       .event-row-value { font-size: 15px; }
+
       .event-price-row { align-items: stretch; flex-direction: column; gap: 10px; padding: 12px; }
+
       .event-price-copy { justify-content: center; padding: 0; }
+
       .event-price-cta { width: 100%; }
+
       .metrics-band { padding: 15px 0; }
+
       .metric-item { padding: 9px 5px; }
+
       .metric-item:nth-child(even) { border-right: 0; }
+
       .register-card { padding: 23px 20px 20px; }
+
       .section-heading { margin-bottom: 29px; }
+
       .section-pad { padding: 63px 0; }
+
       .recognition-photo { height: 290px; }
+
       .recognition-copy { padding: 26px 23px; }
+
       .service-card img { height: 225px; }
+
       .service-copy p { min-height: 0; }
-      .press-row { gap: 13px 24px; }
-      .press-row span { font-size: 16px; }
+
+      .press-row { margin-top: 30px; }
+
+      .press-label { margin-bottom: 12px; font-size: 15px; }
+
+      .press-slider { overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+
+      .press-slider::-webkit-scrollbar { display: none; }
+
+      .press-track { flex-wrap: nowrap; justify-content: flex-start; gap: 12px; padding-bottom: 4px; }
+
+      .press-item { flex: 0 0 calc((100% - 12px) / 2); scroll-snap-align: start; }
+
+      .press-item img { max-width: 100%; height: 70px; }
+
       .guide-photo { height: 360px; }
+
       .steps-row::before { display: none; }
+
       .step-card { margin-bottom: 25px; }
+
       .meta-bar { justify-content: flex-start; }
+
       .btn-outline-gold { display: none;}
+
       .carousel-slide { flex-basis: calc((100% - 18px) / 2); }
+
       .testimonial-controls { margin-top: -3px; }
+
       .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 210px 145px 145px; gap: 9px; }
+
       .gallery-main { grid-column: 1 / span 2; grid-row: 1; }
+
       .gallery-cards { grid-column: 1; grid-row: 2; }
+
       .gallery-calm { grid-column: 2; grid-row: 2; }
+
       .gallery-award { grid-column: 1 / span 2; grid-row: 3; }
+
       .pricing-panel { min-height: 220px; }
+
       .pricing-copy { padding: 25px 23px; }
+
       .closing-band { padding: 38px 0; }
+
       body { padding-bottom: 116px; }
+
       .sticky-offer-bar { width: calc(100% - 18px); gap: 9px; padding: 10px 11px; border-radius: 15px; }
+
       .sticky-offer-urgency { font-size: 11px; }
+
       .sticky-offer-count { gap: 3px 7px; font-size: 11px; }
+
       .sticky-offer-count time { font-size: 15px; }
+
       .sticky-offer-button { min-width: 133px; padding: 8px 11px; font-size: 11px; }
+
       .sticky-offer-button strong { font-size: 21px; }
+
     }
+
     @media (max-width: 575.98px) {
+
       .carousel-slide { flex-basis: 100%; }
+
       .review-controls { margin-top: 24px; }
+
       .sticky-offer-bar { grid-template-columns: minmax(0, 1fr) auto; }
+
       .sticky-offer-count { display: block; }
+
       .sticky-offer-count time { display: block; white-space: nowrap; }
+
       .sticky-offer-button { min-width: 118px; padding: 8px 9px; }
+
     }
+
     @media (max-width: 420px) {
+
       .brand-mark { width: 34px; height: 34px; }
+
       .brand-name { font-size: 17px; }
+
       .brand-caption { font-size: 8px; }
+
       .nav-links { gap: 9px; }
+
       .nav-links a { font-size: 9px; }
+
       .event-row-label { font-size: 10px; letter-spacing: .1em; }
+
       .event-date-time-row small { font-size: 11px; }
+
     }
+
     @media (prefers-reduced-motion: reduce) {
+
       html { scroll-behavior: auto; }
+
       *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+
       .btn-berry, .btn-outline-gold, .service-link { animation: none !important; will-change: auto; }
+
     }
+
   </style>
+
 </head>
+
 <body>
+
   <header class="site-header" id="top">
+
     <div class="top-note">Personalised Tarot Guidance&nbsp; | &nbsp;In-Person in Mumbai &amp; Online Worldwide</div>
+
   </header>
 
+
+
   <main>
+
     <section class="hero" aria-labelledby="hero-title">
+
       <div class="container hero-inner">
+
         <div class="row align-items-center g-lg-5">
+
           <div class="col-lg-7">
+
             <figure class="hero-mobile-image-wrap">
+
               <img class="hero-mobile-image" src="assets/hero-image.webp" alt="Divine Monica Harsh holding a tarot card during a reading" fetchpriority="high">
+
             </figure>
+
             <p class="eyebrow">A live 3-day tarot webinar with Divine Monica Harsh</p>
+
             <h1 id="hero-title">Find Clarity in <em>Love, Career</em> &amp; Life's Important Decisions</h1>
+
             <p class="hero-copy">Join Monica for three thoughtful evenings exploring tarot, its symbolism and the questions that matter to you. Build a fresh perspective and leave with practical ways to reflect on your next steps.</p>
+
             <div class="event-details" aria-label="Webinar date, time and price">
+
               <div class="event-date-time-row">
+
                 <div class="event-detail-cell">
+
                   <span class="event-row-label">Dates</span>
+
                   <span class="event-row-value">23 · 24 · 25</span>
+
                   <small>Three consecutive days</small>
+
                 </div>
+
                 <div class="event-detail-cell">
+
                   <span class="event-row-label">Timing</span>
+
                   <span class="event-row-value">7:00-8:30 PM</span>
+
                   <small>IST</small>
+
                 </div>
+
               </div>
+
               <div class="event-row event-price-row">
+
                 <div class="event-price-copy"><strong>₹999</strong><span>Full access · all 3 sessions</span></div>
+
                 <a class="btn-berry event-price-cta" href="#register">Reserve your seat · ₹999</a>
+
               </div>
+
             </div>
-            <p class="month-note">Month and year will be added once confirmed.</p>
+
           </div>
+
           <div class="col-lg-5 col-xl-5" id="register">
+
             <div class="register-card">
+
               <div class="register-head">
+
                 <div><p class="eyebrow">Registration</p><h2>Join the 3-Day Webinar</h2></div>
-                <div class="fee-tag"><strong>₹999</strong><small>3-day pass</small></div>
+
               </div>
+
               <form id="registrationForm">
+
                 <div class="mb-3">
+
                   <label class="form-label" for="fullName">Your Name</label>
+
                   <input class="form-control" id="fullName" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+
                 </div>
+
                 <div class="mb-3">
+
                   <label class="form-label" for="phone">Phone Number</label>
+
                   <input class="form-control" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{8,18}" placeholder="+91 00000 00000" required>
+
                 </div>
+
                 <div class="mb-3">
+
                   <label class="form-label" for="email">Email address</label>
+
                   <input class="form-control" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
                 </div>
+
                 <div class="mb-3">
+
                   <label class="form-label" for="topic">What would you like to explore?</label>
+
                   <select class="form-select" id="topic" name="topic">
+
                     <option>Love &amp; Relationships</option>
+
                     <option>Career &amp; Business</option>
+
                     <option>Life Decisions</option>
+
                     <option>Personal Growth</option>
+
                     <option>Learning tarot</option>
+
                   </select>
+
                 </div>
+
                 <button class="btn-berry w-100" type="submit">Reserve your seat · ₹999</button>
+
                 <p class="form-hint">Payment will continue through Razorpay after the payment link is connected.</p>
+
                 <p class="form-status" id="formStatus" aria-live="polite"></p>
+
               </form>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
+
 
     <section class="metrics-band" aria-label="Experience and webinar format">
+
       <div class="container">
+
         <div class="row g-0">
+
           <div class="col-6 col-md-3 metric-item"><strong>20+</strong><span>Years of Experience</span></div>
+
           <div class="col-6 col-md-3 metric-item"><strong>4,500+</strong><span>Readings</span></div>
+
           <div class="col-6 col-md-3 metric-item"><strong>3 Days</strong><span>Live Webinar</span></div>
+
           <div class="col-6 col-md-3 metric-item"><strong>Online</strong><span>Join from anywhere</span></div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-cream" id="recognition">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Recognition</p>
+
           <h2>Experience, Recognition &amp; a Journey of Guidance</h2>
+
         </div>
+
         <div class="recognition-card row g-0 align-items-stretch">
+
           <div class="col-md-6"><img class="recognition-photo" src="assets/award.jpg" alt="Divine Monica Harsh receiving the Icons of India award" loading="lazy"></div>
+
           <div class="col-md-6 d-flex align-items-center">
+
             <div class="recognition-copy">
+
               <p class="eyebrow">Award</p>
+
               <h3>Icons of India 2026 Award</h3>
+
               <p>Recognised for her contribution to spirituality and tarot reading, honouring more than two decades of guiding individuals through life's questions.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="press-row" aria-label="As featured in">
+
+          <p class="press-label">As featured in</p>
+
+          <div class="press-slider" role="region" aria-label="Featured media logos" aria-roledescription="carousel" tabindex="0">
+            <div class="press-track">
+              <span class="press-item"><img src="media/mid-day.png" alt="Mid-Day" loading="lazy"></span>
+              <span class="press-item"><img src="media/abp-live.png" alt="ABP Live" loading="lazy"></span>
+              <span class="press-item"><img src="media/business-upturn.png" alt="Business Upturn" loading="lazy"></span>
+              <span class="press-item"><img src="media/issue-wire.png" alt="IssueWire" loading="lazy"></span>
+              <span class="press-item"><img src="media/dainik-bhaskar.webp" alt="Dainik Bhaskar" loading="lazy"></span>
+              <span class="press-item"><img src="media/punjab-kesri.png" alt="Punjab Kesri" loading="lazy"></span>
+              <span class="press-item"><img src="media/india-csr.webp" alt="India CSR" loading="lazy"></span>
             </div>
           </div>
+
         </div>
-        <div class="press-row" aria-label="As featured in">
-          <span class="press-label">As featured in</span>
-          <span>Mid-Day</span><span>ABP Live</span><span>Business Upturn</span><span>IssueWire</span><span>Dainik Bhaskar</span><span>Punjab Kesri</span><span>India CSR</span>
-        </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-lavender" id="who-its-for">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Does any of this feel familiar?</p>
+
           <h2>Sometimes, You Just Need a Different Perspective</h2>
+
           <p>Whether you're navigating a relationship, considering a career change or weighing an important decision, this webinar offers a little space to reflect on what matters to you.</p>
+
         </div>
+
         <div class="row g-3">
+
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">♡</div><h3>Love &amp; Relationships</h3><p>Explore relationship patterns, emotional questions, compatibility and the possibilities ahead.</p></article></div>
+
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">♧</div><h3>Career &amp; Business</h3><p>Reflect on professional choices, business opportunities and your next direction.</p></article></div>
+
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">◎</div><h3>Life Decisions</h3><p>Gain perspective when weighing options or moving through a period of uncertainty.</p></article></div>
+
           <div class="col-sm-6 col-lg-3"><article class="icon-card"><div class="icon-circle">✧</div><h3>Personal Growth</h3><p>Explore recurring patterns, reconnect with your intuition and learn about yourself.</p></article></div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad-lg bg-cream" id="services">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Tarot services</p>
+
           <h2>Personalised Tarot Readings for What Matters to You</h2>
+
           <p>Every session begins with your questions. Monica uses traditional tarot interpretation and personalised guidance to help you explore your concerns and consider possible paths forward.</p>
+
         </div>
+
         <div class="row g-3">
+
           <div class="col-md-4">
+
             <article class="service-card">
+
               <img src="assets/tarot-love.jpg" alt="Tarot cards during a love and relationship reading" loading="lazy">
+
               <div class="service-copy">
+
                 <h3>Love &amp; Relationship Tarot Reading</h3>
+
                 <p>Explore questions about love, relationships, emotional connection and relationship patterns. Gain a fresh perspective on your situation and the choices available to you.</p>
+
                 <a class="service-link" href="#register">Explore More →</a>
+
               </div>
+
             </article>
+
           </div>
+
           <div class="col-md-4">
+
             <article class="service-card">
+
               <img src="assets/tarot-career.jpg" alt="Tarot cards laid out for a career and business reading" loading="lazy">
+
               <div class="service-copy">
+
                 <h3>Career &amp; Business Tarot Reading</h3>
+
                 <p>Thinking about a professional change or an important business decision? Explore your concerns, possible opportunities and the considerations that may help you move forward.</p>
+
                 <a class="service-link" href="#register">Explore More →</a>
+
               </div>
+
             </article>
+
           </div>
+
           <div class="col-md-4">
+
             <article class="service-card">
+
               <img src="assets/client-session.jpg" alt="Divine Monica Harsh with a client after a reading" loading="lazy">
+
               <div class="service-copy">
+
                 <h3>Personal Clarity &amp; Decision-Making</h3>
+
                 <p>When you have several choices or feel uncertain about your next step, a reading can help you reflect on the situation, examine patterns and clarify your priorities.</p>
+
                 <a class="service-link" href="#register">Explore More →</a>
+
               </div>
+
             </article>
+
           </div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad-lg webinar-series" id="agenda">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Your three-evening learning path</p>
+
           <h2>From First Card to Confident Reflection</h2>
+
           <p>Three live sessions, one clear progression. Each evening runs from 7:00 to 8:30 PM IST.</p>
+
         </div>
+
         <div class="row g-3 webinar-session-grid">
+
           <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-number">Day 01</span></div><span class="webinar-session-time">23rd · 7:00-8:30 PM</span></div><h3>Tarot Foundations</h3><ul class="agenda-points"><li>Understand the deck and the Major and Minor Arcana.</li><li>Explore suits, symbols and the meaning behind each card.</li><li>Try a simple exercise to get comfortable with tarot.</li></ul></article></div>
+
           <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-number">Day 02</span></div><span class="webinar-session-time">24th · 7:00-8:30 PM</span></div><h3>Questions &amp; Context</h3><ul class="agenda-points"><li>Shape useful questions for a tarot reading.</li><li>Explore relationship, work and life-decision examples.</li><li>Bring intuition together with card meanings.</li></ul></article></div>
+
           <div class="col-sm-6 col-lg-4"><article class="webinar-session"><div class="webinar-session-top"><div><span class="webinar-session-number">Day 03</span></div><span class="webinar-session-time">25th · 7:00-8:30 PM</span></div><h3>Reading &amp; Reflection</h3><ul class="agenda-points"><li>Follow a simple spread from start to finish.</li><li>Connect cards into a reading with context.</li><li>Practise, reflect and consider possible next steps.</li></ul></article></div>
+
         </div>
+
         <div class="price-strip">
+
           <div><strong>One pass · all three sessions · ₹999</strong><span>Live online · 90 minutes each evening · IST</span></div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-lavender" id="why-choose-us">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Why join this series</p>
+
           <h2>A Thoughtful Way to Begin Exploring Tarot</h2>
+
           <p>Learn at a steady pace, ask better questions and use tarot as a tool for reflection—whether you are new to the cards or already curious about them.</p>
+
         </div>
+
         <div class="row g-3">
+
           <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">✧</div><h3>Learn with experience</h3><p>Explore tarot with Divine Monica Harsh, who brings 20+ years of experience and 4,500+ readings.</p></article></div>
+
           <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">◷</div><h3>Clear three-day path</h3><p>Move from tarot foundations to question-setting, then practise reading and reflection.</p></article></div>
+
           <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">♡</div><h3>Reflection first</h3><p>Use the cards to explore perspectives and patterns; keep your choices and decisions your own.</p></article></div>
+
           <div class="col-sm-6 col-lg-3"><article class="why-card"><div class="icon-circle">◎</div><h3>Join from anywhere</h3><p>Attend online across all three evenings, from wherever you are.</p></article></div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-lavender" id="guide">
+
       <div class="container">
+
         <div class="row align-items-center g-5">
+
           <div class="col-lg-6"><div class="guide-photo-wrap"><img class="guide-photo" src="assets/monica-session.jpg" alt="Divine Monica Harsh guiding a tarot session" loading="lazy"></div></div>
+
           <div class="col-lg-6">
+
             <div class="guide-copy">
+
               <p class="eyebrow">Meet your tarot reader</p>
+
               <h2>Meet Divine Monica Harsh</h2>
+
               <p>Divine Monica Harsh has spent over 20 years working in tarot reading and spiritual guidance, helping people explore personal, professional and relationship-related questions.</p>
+
               <p>Her journey into tarot began with a deep interest in spiritual studies and led her to formal learning and training in Rajasthan. Today, she offers personalised tarot readings for individuals navigating relationships, career and important life decisions.</p>
+
               <p>Her approach focuses on understanding the symbolism of the cards, listening carefully to each person's concerns and exploring possible paths forward in a supportive, confidential setting.</p>
+
               <ul class="gold-list"><li>20+ years of experience</li><li>4,500+ readings</li><li>Online consultations and in-person sessions in Mumbai</li></ul>
+
               <a class="btn-outline-gold" href="https://divine-monicaharsh.com/about.html">Get to Know Monica</a>
+
             </div>
+
           </div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-cream" id="how-it-works">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">How it works</p>
+
           <h2>What to Expect During Your Tarot Reading</h2>
+
         </div>
+
         <div class="row steps-row g-3">
+
           <div class="col-md-4"><article class="step-card"><div class="step-num">1</div><h3>Share What's on Your Mind</h3><p>Tell Monica what you would like to explore. You can bring questions about relationships, career, business or personal decisions.</p></article></div>
+
           <div class="col-md-4"><article class="step-card"><div class="step-num">2</div><h3>Explore the Cards</h3><p>Monica interprets the selected cards, explains their symbolism and relates the reading to your specific questions.</p></article></div>
+
           <div class="col-md-4"><article class="step-card"><div class="step-num">3</div><h3>Reflect and Consider Your Next Steps</h3><p>Use the discussion to consider different perspectives, recognise patterns and decide what feels right for your circumstances.</p></article></div>
+
         </div>
+
         <div class="meta-bar">
+
           <span><b>✧</b>Three live evening sessions</span><span><b>◷</b>90 minutes each</span><span><b>◎</b>Online from anywhere</span><span><b>♡</b>Beginner-friendly format</span>
+
         </div>
+
         <p class="section-note">Tarot can support reflection, but it does not guarantee outcomes. Your decisions remain your own.</p>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-cream" id="whatsapp-testimonials">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Kind words from clients</p>
+
           <h2>Feedback, Shared in Their Own Words</h2>
-          <p>Short reflections from tarot readings and online sessions, shared in a familiar conversation style.</p>
+
+          <p>Reviews shared by clients after their tarot readings with Divine Monica Harsh.</p>
+
         </div>
+
         <div class="row g-4">
-          <div class="col-lg-4"><article class="chat-testimonial">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
-            </svg></span><div><span class="chat-testimonial-name">Kavita D. · Mumbai</span></div></div>
-            <div class="chat-testimonial-body"><blockquote class="chat-bubble">Monica's reading felt specific and grounded. It helped me think through a decision I'd been putting off.</blockquote></div>
-          </article></div>
-          <div class="col-lg-4"><article class="chat-testimonial">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
-            </svg></span><div><span class="chat-testimonial-name">Meera S. · New Jersey</span></div></div>
-            <div class="chat-testimonial-body"><blockquote class="chat-bubble">The online session felt personal, and the time difference was handled smoothly.</blockquote></div>
-          </article></div>
-          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
-            </svg></span><div><span class="chat-testimonial-name">Client story 03</span></div></div>
-            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-          </article></div>
-          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
-            </svg></span><div><span class="chat-testimonial-name">Client story 04</span></div></div>
-            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-          </article></div>
-          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
-            </svg></span><div><span class="chat-testimonial-name">Client story 05</span></div></div>
-            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-          </article></div>
-          <div class="col-lg-4"><article class="chat-testimonial chat-testimonial--pending">
-            <div class="chat-testimonial-head"><span class="chat-testimonial-avatar" aria-hidden="true"><svg width="25" height="25" fill="#2CD46B" viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.76 7.85 19L7.55 18.83L4.44 19.65L5.27 16.61L5.08 16.3C4.26 15 3.82 13.48 3.82 11.91C3.82 7.39 7.51 3.7 12.05 3.7C16.59 3.7 20.27 7.39 20.27 11.92C20.27 16.46 16.58 20.15 12.05 20.15M16.57 14.39C16.32 14.26 15.1 13.66 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.68 14.51 13.53 14.68C13.39 14.85 13.24 14.87 13 14.75C12.75 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.61 11.43 9.73 11.31C9.84 11.2 9.98 11.02 10.1 10.87C10.23 10.73 10.27 10.62 10.35 10.46C10.44 10.29 10.39 10.15 10.33 10.02C10.27 9.9 9.79 8.71 9.58 8.23C9.39 7.76 9.19 7.82 9.04 7.81H8.58C8.42 7.81 8.15 7.87 7.92 8.12C7.7 8.37 7.07 8.96 7.07 10.17C7.07 11.38 7.95 12.55 8.08 12.72C8.2 12.88 9.82 15.38 12.3 16.45C12.89 16.71 13.35 16.86 13.71 16.98C14.3 17.17 14.84 17.14 15.26 17.08C15.74 17.01 16.72 16.48 16.93 15.9C17.13 15.31 17.13 14.81 17.07 14.71C17.01 14.61 16.82 14.52 16.57 14.39Z"></path>
-            </svg></span><div><span class="chat-testimonial-name">Client story 06</span></div></div>
-            <div class="chat-testimonial-body"><blockquote class="chat-bubble">An approved client review can be added here.</blockquote></div>
-          </article></div>
+
+          <div class="col-md-6 col-lg-4"><div class="review-image-card"><img src="testimonial-img/review-4.jpeg" alt="Screenshot of a five-star client review for Divine Monica Harsh, image 1" loading="lazy" decoding="async"></div></div>
+
+          <div class="col-md-6 col-lg-4"><div class="review-image-card"><img src="testimonial-img/review-5.jpeg" alt="Screenshot of a five-star client review for Divine Monica Harsh, image 2" loading="lazy" decoding="async"></div></div>
+
+          <div class="col-md-6 col-lg-4"><div class="review-image-card"><img src="testimonial-img/review-6.jpeg" alt="Screenshot of a five-star client review for Divine Monica Harsh, image 3" loading="lazy" decoding="async"></div></div>
+
+          <div class="col-md-6 col-lg-4"><div class="review-image-card"><img src="testimonial-img/review-1.jpeg" alt="Screenshot of a five-star client review for Divine Monica Harsh, image 4" loading="lazy" decoding="async"></div></div>
+
+          <div class="col-md-6 col-lg-4"><div class="review-image-card"><img src="testimonial-img/review-3.jpeg" alt="Screenshot of a five-star client review for Divine Monica Harsh, image 5" loading="lazy" decoding="async"></div></div>
+
+          <div class="col-md-6 col-lg-4"><div class="review-image-card"><img src="testimonial-img/review-2.jpeg" alt="Screenshot of a five-star client review for Divine Monica Harsh, image 6" loading="lazy" decoding="async"></div></div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad-lg testimonials" id="testimonials">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Video testimonials</p>
+
           <h2>What Clients Have Shared</h2>
+
           <p>Every person's experience is different. Browse the video story slots below; video clips can be added when you share the files or public links.</p>
+
         </div>
+
         <div class="testimonial-controls" aria-label="Video slider controls">
+
           <button class="slider-arrow" id="slidePrev" type="button" aria-label="Previous videos">‹</button>
+
           <button class="slider-arrow" id="slideNext" type="button" aria-label="Next videos">›</button>
+
         </div>
+
         <div class="video-viewport">
+
         <div class="video-track carousel-track" id="videoTrack" aria-label="Client video testimonials">
+
           <article class="video-slide carousel-slide">
+
             <div class="video-card">
+
               <div class="video-poster"><img src="assets/tarot-love.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="0" aria-label="Open video testimonial one">▶</button></div>
+
               <div class="video-copy"><h3>A fresh perspective</h3><p>Video testimonial slot · ready for your clip</p></div>
+
             </div>
+
           </article>
+
           <article class="video-slide carousel-slide">
+
             <div class="video-card">
+
               <div class="video-poster"><img src="assets/monica-session.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="1" aria-label="Open video testimonial two">▶</button></div>
+
               <div class="video-copy"><h3>Guidance that feels personal</h3><p>Video testimonial slot · ready for your clip</p></div>
+
             </div>
+
           </article>
+
           <article class="video-slide carousel-slide">
+
             <div class="video-card">
+
               <div class="video-poster"><img src="assets/client-session.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="2" aria-label="Open video testimonial three">▶</button></div>
+
               <div class="video-copy"><h3>Space to explore what matters</h3><p>Video testimonial slot · ready for your clip</p></div>
+
             </div>
+
           </article>
+
           <article class="video-slide carousel-slide">
+
             <div class="video-card">
+
               <div class="video-poster"><img src="assets/cards-gallery.jpg" alt="" loading="lazy"><button class="play-button" type="button" data-video-index="3" aria-label="Open video testimonial four">▶</button></div>
+
               <div class="video-copy"><h3>Another story is waiting</h3><p>Video testimonial slot · ready for your clip</p></div>
+
             </div>
+
           </article>
+
         </div>
+
         </div>
+
         <div class="slider-dots" id="sliderDots" aria-label="Choose a video slide"></div>
+
         <div class="testimonial-controls review-controls" aria-label="Client review slider controls">
+
           <button class="slider-arrow" id="reviewPrev" type="button" aria-label="Previous client reviews">‹</button>
+
           <button class="slider-arrow" id="reviewNext" type="button" aria-label="Next client reviews">›</button>
+
         </div>
+
         <div class="video-viewport review-viewport">
+
           <div class="carousel-track" id="reviewTrack" aria-label="Client reviews">
+
             <article class="carousel-slide"><div class="quote-card"><div class="quote-mark">“</div><blockquote>Monica's reading felt specific and grounded, and helped me think through a decision I had been putting off.</blockquote><cite>Kavita D. — Mumbai</cite></div></article>
+
             <article class="carousel-slide"><div class="quote-card"><div class="quote-mark">“</div><blockquote>The online session felt personal, and the time difference was handled smoothly.</blockquote><cite>Meera S. — New Jersey, USA</cite></div></article>
+
             <article class="carousel-slide"><div class="quote-card"><p class="eyebrow">Client story</p><h3>More reviews coming soon</h3><p>Add another approved client review here when it is available.</p></div></article>
+
             <article class="carousel-slide"><div class="quote-card"><p class="eyebrow">Your experience</p><h3>Your story could be next</h3><p>New client stories appear here once they are shared and approved.</p></div></article>
+
           </div>
+
         </div>
+
         <div class="slider-dots" id="reviewDots" aria-label="Choose a client review slide"></div>
+
         <div class="price-strip">
+
           <div><strong>Join all three live evenings for ₹999</strong><span>Dates 23 · 24 · 25&nbsp; | &nbsp;7:00-8:30 PM IST</span></div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-cream" id="gallery">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">A glimpse into Monica's tarot practice</p>
+
           <h2>A Glimpse Into Monica's Tarot Practice</h2>
+
         </div>
+
         <div class="gallery-grid">
-          <img class="gallery-main" src="assets/monica-gallery.jpg" alt="Divine Monica Harsh holding a tarot card during a reading" loading="lazy">
-          <img class="gallery-cards" src="assets/cards-gallery.jpg" alt="Tarot cards laid out during a reading" loading="lazy">
-          <img class="gallery-calm" src="assets/calm-gallery.jpg" alt="A quiet moment for reflection" loading="lazy">
-          <img class="gallery-award" src="assets/award-gallery.jpg" alt="Divine Monica Harsh receiving recognition at an award ceremony" loading="lazy">
+
+          <img class="gallery-main" src="../images/about-divine-monica-harsh.webp" alt="Divine Monica Harsh holding a tarot card during a reading" loading="lazy">
+
+          <img class="gallery-cards" src="../images/divine-monica-harsh-events-8.webp" alt="Tarot cards laid out during a reading" loading="lazy">
+
+          <img class="gallery-calm" src="../images/divine-monica-harsh-events-16.png" alt="A quiet moment for reflection" loading="lazy">
+
+          <img class="gallery-award" src="../images/famous-tarot-card-reader-15.webp" alt="Divine Monica Harsh receiving recognition at an award ceremony" loading="lazy">
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-lavender" id="booking">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">Registration</p>
+
           <h2>A Personal Webinar, Focused on Your Questions</h2>
+
           <p>One simple pass gives you access to the complete three-day live series.</p>
+
         </div>
+
         <div class="pricing-card row g-0">
+
           <div class="col-md-5">
+
             <div class="pricing-panel">
+
               <p class="eyebrow">India · three live evenings</p>
+
               <strong>₹999</strong>
+
               <p>For the full 3-day webinar series</p>
+
             </div>
+
           </div>
+
           <div class="col-md-7 d-flex align-items-center">
+
             <div class="pricing-copy w-100">
+
               <h3>Everything in one pass</h3>
+
               <ul class="gold-list">
+
                 <li>Three live 90-minute sessions with Divine Monica Harsh</li>
+
                 <li>Dates 23rd, 24th &amp; 25th · 7:00-8:30 PM IST</li>
+
                 <li>Online access from anywhere</li>
+
                 <li>Guided examples, reflection and beginner-friendly practice</li>
+
               </ul>
+
               <p class="section-note">The Razorpay payment link will be connected once provided.</p>
+
             </div>
+
           </div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
+
 
     <section class="section-pad bg-cream" id="faq">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">FAQs</p>
+
           <h2>Questions You May Have</h2>
+
         </div>
+
         <div class="accordion faq-list" id="faqAccordion">
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Is tarot reading guaranteed to predict the future?</button></h3>
+
             <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">No. Tarot readings do not guarantee future outcomes. They can be used to reflect on your circumstances, explore possible paths and support your own decision-making.</div></div>
+
           </div>
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">What can I ask during a tarot reading?</button></h3>
+
             <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The examples in the webinar explore questions about relationships, career, business, personal growth and important life decisions.</div></div>
+
           </div>
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Can I join the webinar online?</button></h3>
+
             <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. The sessions are online, so you can join from anywhere. Joining information will be shared after registration and payment are connected.</div></div>
+
           </div>
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">How long is each webinar session?</button></h3>
+
             <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Each session runs for 90 minutes, from 7:00 PM to 8:30 PM IST.</div></div>
+
           </div>
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">Are sessions confidential?</button></h3>
+
             <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The webinar is a respectful space for learning and reflection. You are welcome to participate without sharing personal details.</div></div>
+
           </div>
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">Where is Monica based?</button></h3>
+
             <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Monica is based in Dahisar West, Mumbai, and offers online consultations as well as in-person sessions in Mumbai.</div></div>
+
           </div>
+
           <div class="accordion-item">
+
             <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSeven" aria-expanded="false" aria-controls="faqSeven">How do I register for the webinar?</button></h3>
+
             <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Fill in the registration form to continue to the ₹999 payment link. The dates are 23rd, 24th and 25th; month and year will be confirmed.</div></div>
+
           </div>
+
         </div>
+
         <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
       </div>
+
     </section>
+
   </main>
 
+
+
   <section class="closing-band">
+
     <div class="container">
+
       <span class="star" aria-hidden="true">✧</span>
+
       <h2>Your Questions Deserve Time, Care &amp; Clarity</h2>
+
       <p>Take a moment for yourself. Bring the questions on your mind and explore a fresh perspective in this three-day webinar with Divine Monica Harsh.</p>
+
       <div class="section-cta"><a class="btn-berry" href="#register">Join webinar · ₹999</a></div>
+
     </div>
+
   </section>
 
+
+
   <aside class="sticky-offer-bar" aria-label="Webinar countdown and registration">
+
     <div class="sticky-offer-copy">
+
       <p class="sticky-offer-urgency">Hurry—save your place in the 3-day webinar</p>
+
       <div class="sticky-offer-count"><span>Time until Day 1 · 23rd · 7:00 PM IST:</span><time id="webinarCountdown" aria-live="off">--d --h --m --s</time></div>
+
     </div>
+
     <a class="btn-berry sticky-offer-button" href="#register"><span>Reserve your seat</span><strong>₹999</strong></a>
+
   </aside>
 
+
+
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalTitle" aria-hidden="true">
+
     <div class="modal-dialog modal-dialog-centered modal-lg">
+
       <div class="modal-content">
+
         <div class="modal-header"><h2 class="modal-title" id="videoModalTitle">Client video story</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+
         <div class="video-modal-stage" id="videoModalStage">
+
           <p id="videoPlaceholder">This video slot is ready for a testimonial clip. Add its direct video or YouTube link in the settings at the end of this file.</p>
+
           <video id="videoPlayer" class="d-none" controls playsinline></video>
+
           <iframe id="youtubePlayer" class="d-none" title="Client video testimonial" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
+
     // Add the Razorpay payment link when it is available.
+
     const RAZORPAY_PAYMENT_URL = "";
 
+
+
     // Replace empty strings with direct video URLs (.mp4) or YouTube watch/share URLs.
+
     const TESTIMONIAL_VIDEO_URLS = ["", "", "", ""];
 
+
+
     // Until the event month/year is confirmed, count down to the next 23rd at 7:00 PM IST.
+
     function getNextWebinarStart() {
+
       const parts = new Intl.DateTimeFormat("en-GB", {
+
         timeZone: "Asia/Kolkata",
+
         year: "numeric",
+
         month: "numeric"
+
       }).formatToParts(new Date());
+
       const year = Number(parts.find(function (part) { return part.type === "year"; }).value);
+
       const month = Number(parts.find(function (part) { return part.type === "month"; }).value);
+
       let target = Date.UTC(year, month - 1, 23, 13, 30, 0);
+
       if (target <= Date.now()) target = Date.UTC(year, month, 23, 13, 30, 0);
+
       return target;
+
     }
+
+
 
     const webinarCountdown = document.getElementById("webinarCountdown");
+
     const webinarStart = getNextWebinarStart();
+
     function updateWebinarCountdown() {
+
       const remaining = Math.max(0, webinarStart - Date.now());
+
       const days = Math.floor(remaining / 86400000);
+
       const hours = Math.floor((remaining % 86400000) / 3600000);
+
       const minutes = Math.floor((remaining % 3600000) / 60000);
+
       const seconds = Math.floor((remaining % 60000) / 1000);
+
       webinarCountdown.textContent = days + "d " + String(hours).padStart(2, "0") + "h " + String(minutes).padStart(2, "0") + "m " + String(seconds).padStart(2, "0") + "s";
+
     }
+
     updateWebinarCountdown();
+
     window.setInterval(updateWebinarCountdown, 1000);
 
+
+
     const registrationForm = document.getElementById("registrationForm");
+
     const formStatus = document.getElementById("formStatus");
+
     registrationForm.addEventListener("submit", function (event) {
+
       event.preventDefault();
+
       formStatus.textContent = "";
+
       if (!registrationForm.reportValidity()) return;
 
+
+
       if (!RAZORPAY_PAYMENT_URL.trim()) {
+
         const firstName = document.getElementById("fullName").value.trim().split(/\s+/)[0];
+
         formStatus.textContent = "Thanks, " + firstName + ". The Razorpay link is not connected yet, so your details have not been sent or stored.";
+
         return;
+
       }
+
       window.location.assign(RAZORPAY_PAYMENT_URL.trim());
+
     });
 
-    function initCarousel(trackId, dotsId, prevId, nextId, intervalMs) {
-      const track = document.getElementById(trackId);
-      const viewport = track.parentElement;
-      const dots = document.getElementById(dotsId);
-      const originals = Array.from(track.children);
-      const count = originals.length;
-      if (!count) return;
 
+
+    function initCarousel(trackId, dotsId, prevId, nextId, intervalMs) {
+
+      const track = document.getElementById(trackId);
+
+      const viewport = track.parentElement;
+
+      const dots = document.getElementById(dotsId);
+
+      const originals = Array.from(track.children);
+
+      const count = originals.length;
+
+      if (!count) return;
       const before = document.createDocumentFragment();
       originals.forEach(function (slide) { before.appendChild(slide.cloneNode(true)); });
       track.prepend(before);
@@ -1146,12 +2192,11 @@
       let moving = false;
       let timer = null;
       let pendingSteps = [];
-      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       function activeIndex() {
         return ((currentIndex - count) % count + count) % count;
       }
-
       function setPosition(animate) {
         const gap = parseFloat(window.getComputedStyle(track).gap) || 0;
         const step = track.children[0].getBoundingClientRect().width + gap;
@@ -1179,6 +2224,7 @@
         moving = true;
         setPosition(true);
         updateDots();
+
       }
 
       function goTo(index) {
@@ -1189,6 +2235,7 @@
         const steps = Math.min(Math.abs(difference), Math.abs(reverseDifference));
         for (let step = 0; step < steps; step += 1) pendingSteps.push(direction);
         if (!moving && pendingSteps.length) move(pendingSteps.shift());
+
       }
 
       originals.forEach(function (_, index) {
@@ -1253,14 +2300,55 @@
       window.addEventListener("resize", function () {
         if (!moving) setPosition(false);
       });
-
       setPosition(false);
       updateDots();
       startAuto();
     }
-
     initCarousel("videoTrack", "sliderDots", "slidePrev", "slideNext", 4800);
     initCarousel("reviewTrack", "reviewDots", "reviewPrev", "reviewNext", 5600);
+
+    const pressSlider = document.querySelector(".press-slider");
+    const pressMobileQuery = window.matchMedia("(max-width: 767.98px)");
+    const pressReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let pressTimer = null;
+
+    function stopPressAuto() {
+      if (pressTimer) window.clearInterval(pressTimer);
+      pressTimer = null;
+    }
+
+    function startPressAuto() {
+      if (!pressMobileQuery.matches || pressReducedMotion.matches || pressTimer) return;
+      pressTimer = window.setInterval(function () {
+        const item = pressSlider.querySelector(".press-item");
+        if (!item) return;
+        const step = item.getBoundingClientRect().width + parseFloat(window.getComputedStyle(pressSlider.querySelector(".press-track")).gap);
+        const atEnd = pressSlider.scrollLeft + pressSlider.clientWidth >= pressSlider.scrollWidth - 1;
+        pressSlider.scrollTo({ left: atEnd ? 0 : pressSlider.scrollLeft + step, behavior: "smooth" });
+      }, 3200);
+    }
+
+    pressSlider.addEventListener("pointerdown", stopPressAuto);
+    pressSlider.addEventListener("pointerup", startPressAuto);
+    pressSlider.addEventListener("mouseenter", stopPressAuto);
+    pressSlider.addEventListener("mouseleave", startPressAuto);
+    pressSlider.addEventListener("focusin", stopPressAuto);
+    pressSlider.addEventListener("focusout", function (event) {
+      if (!pressSlider.contains(event.relatedTarget)) startPressAuto();
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) stopPressAuto();
+      else startPressAuto();
+    });
+    pressMobileQuery.addEventListener("change", function (event) {
+      stopPressAuto();
+      if (event.matches) startPressAuto();
+    });
+    pressReducedMotion.addEventListener("change", function () {
+      stopPressAuto();
+      startPressAuto();
+    });
+    startPressAuto();
 
     const videoModalElement = document.getElementById("videoModal");
     const videoModal = new bootstrap.Modal(videoModalElement);
@@ -1269,7 +2357,9 @@
     const videoPlaceholder = document.getElementById("videoPlaceholder");
 
     function youtubeEmbedUrl(url) {
+
       try {
+
         const parsed = new URL(url);
         let id = "";
         if (parsed.hostname.includes("youtu.be")) id = parsed.pathname.slice(1);
@@ -1285,40 +2375,76 @@
     }
 
     document.querySelectorAll("[data-video-index]").forEach(function (button) {
+
       button.addEventListener("click", function () {
+
         const url = TESTIMONIAL_VIDEO_URLS[Number(button.dataset.videoIndex)] || "";
+
         videoPlayer.pause();
+
         videoPlayer.removeAttribute("src");
+
         youtubePlayer.removeAttribute("src");
+
         videoPlayer.classList.add("d-none");
+
         youtubePlayer.classList.add("d-none");
+
         videoPlaceholder.classList.remove("d-none");
 
+
+
         if (url) {
+
           const embedUrl = youtubeEmbedUrl(url);
+
           if (embedUrl) {
+
             youtubePlayer.src = embedUrl;
+
             youtubePlayer.classList.remove("d-none");
+
             videoPlaceholder.classList.add("d-none");
+
           } else {
+
             videoPlayer.src = url;
+
             videoPlayer.classList.remove("d-none");
+
             videoPlaceholder.classList.add("d-none");
+
           }
+
         }
+
         videoModal.show();
+
       });
+
     });
 
+
+
     videoModalElement.addEventListener("hidden.bs.modal", function () {
+
       videoPlayer.pause();
+
       videoPlayer.removeAttribute("src");
+
       videoPlayer.load();
+
       youtubePlayer.removeAttribute("src");
+
       videoPlayer.classList.add("d-none");
+
       youtubePlayer.classList.add("d-none");
+
       videoPlaceholder.classList.remove("d-none");
+
     });
+
   </script>
+
 </body>
 </html>
